@@ -1,11 +1,13 @@
+<!--first line of code-->
 <!DOCTYPE html>
-
+<!--language that html will register to-->
 <html lang="en">
 
 	<head>
-		<title>About</title>
-		<meta charset="utf-8">
-		<meta name="author" content="Jisna">
+		<!--This will the name displayed on the tab when you open the page-->
+		<title>Gropu G - About</title>
+		<meta charset="utf-8"> <!--language html register to-->
+		<meta name="author" content="Jisna"> <!--author's name-->
 		<meta name="viewport" content="width=device-width, 
 		initial-scale=1.0" /> <!--Allows the webpage to be resized.-->
 		
@@ -23,10 +25,11 @@
 	
 		
 	</head>
-	
+
+	<!--body where all the information that displays on the page-->
 	<body>
 	   
-				
+		 <!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->		
 	    <nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;">
 	        <div class="container-fluid">
 	             <ul class="navbar-nav">
@@ -55,84 +58,41 @@
 	             </ul>
              </div>
         </nav>
-		
-		<div id="body1">
-	    <!--My main heading of my webpage--> 
-		<h1>About </h1>
-		
-		
-		
-	    <!---about section--->
-		
-		<div class="container">
-		<h2 class="h3about">About Our Project</h2>
-		  <p>Our website is dedicated to promoting awareness of UN Sustainable Development Goal 6: Clean Water and sanitation.
-		     Access to safe water is a basic human right, yet millions still lack it. 
-			 Our goal is to educate, inform, and inspire action.</p>
-		 
-		 <p>This project was created as part of our Web design & Development module at National College of Ireland. 
-		    It reflects our commintment to Sustainability, colloboration, and digital communication. </p> 
-		</div>	
-	            
-		<div class="container">
-		   <h2 class="mission">Mission</h2>
-		   <p>Our mission is to raise awareness about the importance of clean water and sanitation, and to inspire communities to take action in support of UN Sustainable Development Goal 6.</p>
-		</div>
-		
-		<div class="container">
-		   <h2 class="target">UN SDG 8 Targets</h2>
-		      <ol>
-			       <li>Universal access to safe and affordable drinking water</li>
-				   <li>Sanitation and hygiene for all</li>
-				   <li>Improve water quality </li>
-				   <li>Ensure fresh water supply and scarcity</li>
-			       <li>Implement integrated water resources management</li>
-				   <li>Protect and restore water-related ecosystem</li>
-				   <li>Expand international coorperatoin and support for developing countries. </li>
-			       <li>Strengthen local community participation in water management </li>
-			  </ol>
-		</div>
-		
-		<div class="container">
-		   <h2 class="contribution">Team Contribution</h2>
-		   
-		   <p>Our project was a collaborative effort, with each member responsible for specific section:</p>
-		   <ul>
-		       <li>Jisna: About and Facts </li>
-			   <li>Denzel: Impact and Causes</li>
-			   <li>Khrystyna: Solution and Contact</li>
-			   <li>Karim: Gallery and Quiz</li>
-		   </ul>
-		</div>
-		
-		<div class="container">
-		   <h2 class="goals">Future Goals</h2>
-		   
-		   <p>Looking ahead to achieving access to safe and affordabledrinking water and adequate sanitation by 2030, ending open defecation, and improving water quality through reduced pollution and wastewater management. </p>
-        </div>
 
+		<script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
+             })
+        </script>
+
+		<!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
+	    <nav aria-label="PagesOfContent-navi">
+			<!--Assigns the whatever page-links to the right.-->
+		  <ul class="pagination justify-content-end">	
+	        <li class="page-item">
+		        <a class="page-link" href="#" tabindex="-1">Previous</a>
+		    </li>
+		    <li class="page-item active"><a class="page-link">5</a></li>
+		    <li class="page-item"><a class="page-link" href="impact.html">6</a></li>
+		    <li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">7</a></li>
+		    <li class="page-item">
+		    <a class="page-link" href="impact.html">Next</a>
+            </li>
+          </ul>
+        </nav>
+
+		<!--Main heading-->
+		<h1 id ="Title_Name">About</h1> 
+		<!--this text will be displyed -->
+             <p id ="Title_Paragraph">About our project</p>
+
+		<!--footer is where we add the authors name links and so on.-->
+       <footer id="author_credit">
+		<p>Author: Jisna Jose</p>
+		<p><a href="x24229253@student.ncirl.ie">x24229253@student.ncirl.ie</a></p>   
 		
-		
-		<div class="container">
-		   <h2 class="involve">Get Involved</h2>
-		   <p>We invite you to exploree through our website, learn more about the challenges of clean water & sanitation.<br> Together, we can make difference. </p>
-		</div>
-		
-		<!--Footer using bootstrap-->
-		
-		<div class="cardtext-center">
-            <div class="card-header">
-                 SDG 6 Awareness Project
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Web Design & Development</h5>
-                    <p class="card-text">Created by Jisna Jose <br> Student ID:24229253 .</p>
-                    <a href="fact.html" class="btn btn-primary">Facts</a>
-            </div>
-            
-        </div>
-	  </div>
-	  
 	</body>
 			
 </html> 
+
