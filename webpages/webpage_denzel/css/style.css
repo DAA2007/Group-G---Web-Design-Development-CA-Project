@@ -1,5 +1,5 @@
 body{ /*Any content between the body tags will be affected.*/
-	
+	background-color:hsl(186, 72%, 94%); /* I borrowed this code from Jisna which she got from w3schools */
 }
 
 #Title_Paragraph{
