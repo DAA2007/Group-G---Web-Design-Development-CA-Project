@@ -1,35 +1,21 @@
 /* Jisna's css for About and Facts section */
 
-/*h1{
-	text-align:center;
-}
-
 body{
-	background-color:blue;
+    
 }
 
-.nav{
-	list-style-type:none;
-	background-color: black;
-	padding:0px;
-	margin:0px;
-	overflow:hidden;
+      /*background color code from w3school*/
+#body1{
+	background-color:hsl(186, 72%, 94%);
+}
+#body{
+	background-color:hsl(186,82%,93%);
 }
 
-.nav-item {
-	color: white;
-	text-decoration:none;
-	padding:15px;
-	display: block;
-	text-align:center;
-	float:right;
-}*/
-body{
-	
-}
 
 h1{
 	text-align: center;
+	text-shadow:2px 2px 4px #000000
 }
 
 #navbar_logo:hover:hover:not(.active) {
@@ -93,4 +79,62 @@ p{
 .navbar{
   
 
+}
+
+/*border style used to add border to each subtopic*/
+
+.h3about{
+	border-style:outset;
+}
+
+.target{
+	border-style:outset;
+}
+.contribution{
+	border-style:outset;
+}
+.goals{
+	border-style:outset;
+}
+.involve{
+	border-style:outset;
+}
+
+.cardtext-center {
+	text-align:center;
+	padding:3px;
+	background-color:lightblue;
+	color:white;
+}
+
+.card-header{
+	color:white;
+	font-family:funnel Sans;
+}
+
+.card-text{
+	font-style: italic;
+	font-size:16px;
+	
+}
+.cardtext-center{
+	padding:10px;
+	border-style:groove;
+}
+
+.container{
+	padding-top:50px;
+		
+}
+.mission{
+	border-style:outset;
+}
+.intro{
+	padding-bottom:10px;
+}
+.intro1{
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
 }
