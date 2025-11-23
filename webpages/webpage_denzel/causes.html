@@ -1,7 +1,8 @@
 <!DOCTYPE html> <!-- Very first line of code, tells which version of HTML the page is written in. --!>
 
 <html lang="en"> <!-- Language that the HTML will register to. --!>
-<!--Any lines of html codes between any tags starting from the top will be prioritised first.!-->
+<!--Any lines of html codes between any tags starting from the top will be prioritised first!-->
+<!--"X id="x"" or "X class="x" will always have their own meaning which also allows them to be editted individually in style.css !-->
 	<head>
 		<title>Group G - Causes</title> <!-- Title's name that is displayed on the tab. --!>
 		<meta charset="utf-8"> <!-- Language that the HTML will register to. --!>
@@ -56,7 +57,7 @@
 <script>
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl) // 
+  return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
 })
 </script>
 
