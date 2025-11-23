@@ -2,8 +2,24 @@ body{
 	
 }
 
-h1{
+#Title_Paragraph{
+	text-decoration: underline 1px;
+}
+
+#Title_Name, 
+#Title_Paragraph{
 	text-align: center;
+}
+
+#author_credit {
+  border: 4px solid DeepSkyBlue;
+  border-style: dotted;
+  background-color: AliceBlue;
+  color: black;
+  position: relative;
+  left: 5px;
+  padding: 10px;
+  width: 250px;
 }
 
 #navbar_logo:hover:hover:not(.active) {
