@@ -18,10 +18,33 @@
   background-color: AliceBlue;
   color: black;
   position: relative;
-  bottom: 15px;
-  left: 5px;
+  left: 1280px;
+  bottom: 80px;
   padding: 10px;
   width: 250px;
+}
+
+.row
+,.Content
+{
+  position: absolute;
+  width: 120px;
+  top: 165px;
+  left: 20px;
+  border: 4px solid DeepSkyBlue;
+  border-style: slashed;
+  background-color: AliceBlue;
+}
+
+.btn
+ ,.content
+{
+ position: relative;
+  bottom: 140px;
+  left: 8px;
+  border: 4px solid DeepSkyBlue;
+  border-style: slashed;
+  background-color: AliceBlue;
 }
 
 #navbar_logo:hover:hover:not(.active) {

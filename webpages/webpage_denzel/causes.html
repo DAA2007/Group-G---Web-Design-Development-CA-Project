@@ -30,39 +30,17 @@
 		 <li class="navbar-brand" href="#">
         <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
 		</li>
-		<li class="nav-item about">
-			<a class="nav-link about" href="../webpage_jiisna/about.html" title="About" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look to see what Clean Water and Sanitation is about.">About</a>
-		</li>
-		<li class="nav-item gallery">
-			<a class="nav-link gallery" href="../webpage_karim/gallery.html" title="Gallery" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See Pictures.">Gallery</a>
-		</li>
-		<li class="nav-item quiz">
-			<a class="nav-link quiz" href="../webpage_karim/quiz.html" title="Quiz" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself.">Quiz</a>
-		</li>
-		<li class="nav-item credits">
-			<a class="nav-link credits" href="../webpage_kris/credits.html" title="Credits" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See the Credits.">Credits</a>
-		</li>
-		<li class="nav-item home float-end">
-		    <a class="nav-link home float-end" href="../group_website/website.html" title="Home" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage.">Home</a>
-		</li>
+	  <ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="../group_website/website.html" title="Home" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage.">Home</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Causes</li>
+	  </ol>
 	</ul>
   </div>
 </nav>
 
-<script>
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
-})
-</script>
-
 	<nav aria-label="PagesOfContent-navi"> <!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
-  <ul class="pagination justify-content-end"> <!--Assigns the whatever page-links to the right.--!>
+  <ul class="pagination justify-content-end" style="background-color: #bebebe;"> <!--Assigns the whatever page-links to the right.--!>
 		<li class="page-item">
 		  <a class="page-link" href="#" tabindex="-1">Previous</a>
 		</li>
@@ -81,11 +59,43 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 		<p id ="Title_Paragraph">What caused the causes?</p>
 		<!-- This text which will be displayed. --!>
 		
+		<h4>
+  <a class="btn content" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" aria-controls="multiCollapseContent">Open Content</a>
+</h4>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="Content">
+	  <nav class="nav flex-column">
+      <a class="nav-link about" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look to see what Clean Water and Sanitation is about.">About</a>
+		<a class="nav-link" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation">Facts</a>
+	  <a class="nav-link disabled" href="#">>Causes</a> 
+		 <a class="nav-link" aria-current="page" href="impact.html" title="Impact (Created by Denzel)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The devastating effects.">Impact</a>
+	  <a class="nav-link" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems.">Solutions</a>
+		<a class="nav-link" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts.">Contact</a>
+	  <a class="nav-link quiz" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself.">Quiz</a>
+		</nav>
+    </div>
+  </div>
+</div>
+		
 	<footer id="author_credit">
 		 <p>Author: Denzel Abraham</p>
 		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a></p> <!-- Footer is added to include the author's name which is of course me, Denzel Abraham. --!>
 	    </footer>	
 	</div>
+	
+	<script>
+	var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
+	var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+	  return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
+})
+</script>
 	</body>
 			
 </html>
