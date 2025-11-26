@@ -3,12 +3,12 @@
 	background-color:hsl(186, 72%, 94%); /* Used this specific code from Jiisna */
 }
 
-#Title_Paragraph{
+#Title_Subheading{
 	text-decoration: underline 1px; /*Creates an underline under the paragraph text.*/
 }
 
-#Title_Name, /*Moves both the title and title paragraph to the center*/
-#Title_Paragraph{
+#Title_Heading, /*Moves both the title and title paragraph to the center*/
+#Title_Subheading{
 	text-align: center;
 }
 
@@ -33,7 +33,7 @@
   top: 165px;
   left: 20px;
   border: 4px solid DeepSkyBlue;
-  border-style: slashed;
+  border-style: double;
   background-color: AliceBlue;
 }
 
@@ -41,11 +41,8 @@
  ,.content
 {
  position: relative;
-  bottom: 140px;
-  left: 8px;
-  border: 4px solid DeepSkyBlue;
-  border-style: slashed;
-  background-color: AliceBlue;
+  bottom: 270px;
+  left: 6px;
 }
 
 #navbar_logo:hover:hover:not(.active) {

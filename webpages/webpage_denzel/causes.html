@@ -5,7 +5,7 @@
 <!--"X id="x"" or "X class="x" will always have their own meaning which also allows them to be editted individually in style.css !-->
 	<head>
 		<title>Group G - Causes</title> <!-- Title's name that is displayed on the tab. --!>
-		<meta charset="utf-8"> <!-- Language that the HTML will register to. --!>
+		<meta charset="utf-8"> <!-- Character sets the HTML uses. --!>
 		<meta name="viewport" content="width=device-width, 
 		initial-scale=1.0" /> <!--Allows the webpage to be resized.-->
 		
@@ -40,53 +40,59 @@
 </nav>
 
 	<nav aria-label="PagesOfContent-navi"> <!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
-  <ul class="pagination justify-content-end" style="background-color: #bebebe;"> <!--Assigns the whatever page-links to the right.--!>
+  <ul class="pagination justify-content-end"> <!--Assigns the whatever page-links to the right.--!>
 		<li class="page-item">
 		  <a class="page-link" href="#" tabindex="-1">Previous</a>
 		</li>
-		<li class="page-item active"><a class="page-link">5</a></li>
-		<li class="page-item"><a class="page-link" href="impact.html">6</a></li>
-		<li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">7</a></li>
+		<li class="page-item active"><a class="page-link">4</a></li>
+		<li class="page-item"><a class="page-link" href="impact.html">5</a></li>
+		<li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">6</a></li>
 		<li class="page-item">
 		  <a class="page-link" href="impact.html">Next</a>
     </li>
   </ul>
 </nav>
 	
+	<header id="header_body">
 	<div id="body_title">
 	
-	<h1 id ="Title_Name">The Causes - Clean Water & Sanitation</h1> <!--My heading -->
-		<p id ="Title_Paragraph">What caused the causes?</p>
+	<h1 class="text-primary" id ="Title_Heading">The Causes - Clean Water & Sanitation</h1> <!--My heading -->
+		<h4 class="text-primary" id ="Title_Subheading">What caused the causes?</h4>
 		<!-- This text which will be displayed. --!>
 		<div class="container-fluid">
-		<p> So what exactly caused the issues? Well, to be put things into perspective, we first need to look at the water sources and why its prevalent issues! 
-		    According to United Nations Office for Outer Space Affairs, it is estimated that 663 millions doesn't have access to improved water sources, essentially no fresh water sources.
-			The lack of refreshing water notably leads to devastating effects such as individuals receiving detrimental diseases, this is articulated by 800+ children dying on a regular basis.<p>
+		<p class="text-info"> So what exactly is causing the issues? Well, to be put things into perspective, we first need to look at the water supply resources and its prevalent issues! 
+		    According to United Nations Office for Outer Space Affairs, it is estimated across the globe that 663 millions doesn't have access to improved water sources, essentially no fresh water sources.
+			There are among many factors that advocades this turbulent crisis, Here are the most noteworthy ones:<p>
+            
+			
+			
+			<p class="text-info">These causes mentioned contributes to many significant losses and deaths, as a result, they leads to...	<p>		
 		</div>
 		
 		<h4>
-  <a class="btn content" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" aria-controls="multiCollapseContent">Open Content</a>
+  <a class="btn content text-info border-4 border-info" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" 
+  aria-controls="multiCollapseContent" style="background-color: #e3f2fd;">Open Content</a>
 </h4>
 <div class="row">
   <div class="col">
     <div class="collapse multi-collapse" id="Content">
 	  <nav class="nav flex-column">
-      <a class="nav-link about" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
+      <a class="nav-link about text-decoration-underline" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
 			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look to see what Clean Water and Sanitation is about.">About</a>
-			<a class="nav-link quiz" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
+			<a class="nav-link quiz text-decoration-underline" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
 			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look at each and every photos.">Gallery</a>
-		<a class="nav-link" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
+		<a class="nav-link facts text-decoration-underline" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
 			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation">Facts</a>
 	  <a class="nav-link disabled" href="#">>Causes</a> 
-		 <a class="nav-link" aria-current="page" href="impact.html" title="Impact (Created by Denzel)" 
+		 <a class="nav-link impact text-decoration-underline" aria-current="page" href="impact.html" title="Impact (Created by Denzel)" 
 			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The devastating effects.">Impact</a>
-	  <a class="nav-link" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
+	  <a class="nav-link solutions text-decoration-underline" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
 			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems.">Solutions</a>
-		<a class="nav-link" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
+		<a class="nav-link contact text-decoration-underline" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
 			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts.">Contact</a>
-	  <a class="nav-link quiz" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
+	  <a class="nav-link quiz text-decoration-underline" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
 			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself.">Quiz</a>
-	  <a class="nav-link quiz" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
+	  <a class="nav-link credits text-decoration-underline" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
 			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See all of the contributes made.">Credits</a>
 		</nav>
     </div>
@@ -98,6 +104,7 @@
 		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a></p> <!-- Footer is added to include the author's name which is of course me, Denzel Abraham. --!>
 	    </footer>	
 	</div>
+	</header>
 	
 	<script>
 	var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
