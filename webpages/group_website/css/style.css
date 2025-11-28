@@ -1,13 +1,90 @@
-body{
-		background-color:lightgreen;
+
+#body_title{ /*Any content between the body tags will be affected.*/
+	background-color:hsl(186, 72%, 94%); /* Used this specific code from Jiisna */
 }
 
-h1{
+#Title_Subheading{
+	text-decoration: underline 1px; /*Creates an underline under the paragraph text.*/
+}
+
+#Title_Heading, /*Moves both the title and title paragraph to the center*/
+#Title_Subheading{
+	text-align: center;
+}
+
+#author_credit /*Essentially creates a text-box for the author with various styles to it*/
+{
+  border: 4px solid DeepSkyBlue;
+  border-style: dotted;
+  background-color: AliceBlue;
+  color: black;
+  position: relative;
+  left: 1280px;
+  bottom: 80px;
+  padding: 10px;
+  width: 250px;
+}
+
+.row
+,.Content
+{
+  position: absolute;
+  width: 120px;
+  top: 165px;
+  left: 20px;
+  border: 4px solid DeepSkyBlue;
+  border-style: double;
+  background-color: AliceBlue;
+}
+
+.btn
+ ,.content
+{
+ position: relative;
+  bottom: 270px;
+  left: 6px;
+}
+
+.custom-popover{
+   background-color: #111111;
+}
+
+#navbar_logo:hover:hover:not(.active) {
+  background-color: #111111;
+}
+
+#navbar_logo.active {
+  background-color: #04AA6D;
+}
+
+#navbar-nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+#nav-item, 
+#gallery {
+	color: white;
+}
+
+
+#navbar.#a {
+  display: block;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-img{
-		width:200px;
+#navbar.a:hover:not(.active) {
+  background-color: #111111;
+}
+
+#navbar.a.active {
+  background-color: #04AA6D;
 }
 
 .open-sans-<uniquifier> {
@@ -26,7 +103,6 @@ img{
 }
 
 p{
-	color:black;
 	font-family: "Open Sans", sans-serif;
 }
 

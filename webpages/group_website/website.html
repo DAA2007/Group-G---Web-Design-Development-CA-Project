@@ -29,43 +29,28 @@
 			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a>
 		</li>
 		 <li class="navbar-brand" href="#">
-        <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
+        <img src="images/logo.png" alt="Clean Water Logo" width="20" height="70" class="d-inline-block align-text-top border border-2 border-dark">
 		</li>
-		<li class="nav-item about">
-			<a class="nav-link about" href="../webpage_jiisna/about.html" title="About" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look to see what Clean Water and Sanitation is about.">About</a>
-		</li>
-		<li class="nav-item gallery">
-			<a class="nav-link gallery" href="../webpage_karim/gallery.html" title="Gallery" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See Pictures.">Gallery</a>
-		</li>
-		<li class="nav-item quiz">
-			<a class="nav-link quiz" href="../webpage_karim/quiz.html" title="Quiz" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself.">Quiz</a>
-		</li>
-		<li class="nav-item credits">
-			<a class="nav-link credits" href="../webpage_kris/credits.html" title="Credits" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See the Credits.">Credits</a>
-		</li>
-		<li class="nav-item home float-end">
-		    <a class="nav-link home float-end" href="../group_website/website.html" title="Home" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage.">Home</a>
-		</li>
+	  <ol class="breadcrumb">
+		<li class="breadcrumb-item active">Home</li>
+	  </ol>
 	</ul>
   </div>
 </nav>
-
-<script>
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
-})
-</script>
 	
 	<header>	
-	<h1>Clean Water and Sanitation</h1>
-		<p> </p>
+	<h1> Sustainable Development Goal 6: Clean Water and Sanitation</h1>
+		<p> Welcome to our website. </p>
 	</header>
+	
+	<footer id="authors_credit">
+		 <p>Authors: Denzel Abraham, Khrystyna Kokhanovska, Jisna Jose and Karim Jakub</p> <!-- Footer is added to include our student names. --!>
+		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a></p>
+		  <p><a href="x25544583@student.ncirl.ie">x25544583@student.ncirl.ie</a></p>
+		   <p><a href="x24229253@student.ncirl.ie">x24229253@student.ncirl.ie</a></p>
+		    <p><a href="x24766549@student.ncirl.ie">x24766549@student.ncirl.ie</a></p>
+	    </footer>	
+	
 		<!-- <a href="webpages/webpage_denzel/webpage_denzel.html"> Link_page_name. </a> !-->
 		<!-- <a href="webpages/webpage_denzel/webpage_denzel2.html"> Link_page_name. </a> !-->
 		<!-- <a href="webpages/webpage_kris/webpage_kris.html"> Link_page_name. </a> !-->
@@ -76,8 +61,11 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 		<!-- <a href="webpages/webpage_karim/webpage_karim.html"> Link_page_name. </a> !-->
 		<!-- <a href="webpages/webpage_karim/webpage_karim2.html"> Link_page_name. </a> !-->
 		<script>	
-		
-		</script>
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
+})
+		</script>		
 	</body>
 	
 

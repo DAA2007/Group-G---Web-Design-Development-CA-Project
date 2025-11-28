@@ -60,7 +60,10 @@
 	<h1 id ="Title_Heading">The Impacts</h1> <!--My heading -->
 		<p id ="Title_Subheading">The tragic aftermath..</p>
 		<!-- This text which will be displayed. --!>
-		<!-- The lack of refreshing water notably leads to devastating effects such as individuals receiving detrimental diseases, this is articulated by 800+ children dying on a regular basis. !-->
+		<!-- The lack of refreshing water notably leads to devastating effects such as individuals from families receiving detrimental diseases, this is articulated by 800+ children dying on a regular basis. !-->
+		<!-- Not to mention, . !-->
+		
+		<!--However, there are ongoing attempts to solve this current state and prevent these dreadful impacts from happening which are...!-->
 		
 			<h4>
   <a class="btn btn-primary content" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" aria-controls="multiCollapseContent">Open Content</a>
@@ -90,6 +93,46 @@
     </div>
   </div>
 </div>
+
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Content</h1>
+	<p>What page do you want to head to?</p>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas">Close Content</button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="nav-link about" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look to see what Clean Water and Sanitation is about.">About</a>
+			<a class="nav-link quiz" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look at each and every photos.">Gallery</a>
+		<a class="nav-link" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation">Facts</a>
+	  <a class="nav-link" href="causes.html" title="Causes (Created by Denzel)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Learn about the coincidences and results.">Causes</a>
+		 <a class="nav-link disabled" aria-current="page" href="#">>Impact</a>
+	  <a class="nav-link" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems.">Solutions</a>
+		<a class="nav-link" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts.">Contact</a>
+	  <a class="nav-link quiz" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself.">Quiz</a>
+	  <a class="nav-link quiz" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See all of the contributes made.">Credits</a>
+    <button class="btn btn-secondary" type="button">Previous Page</button>
+	<button class="btn btn-secondary" type="button">Next Page</button>
+	<p>Or</p>
+	<button class="btn btn-secondary" type="button">Close</button>
+  </div>
+</div>
+
+<!-- Button to open the offcanvas sidebar -->
+<div class="container-fluid mt-3">
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+  Open Offcanvas Sidebar
+</button>
+</div>
+
 		
 		<footer id="author_credit">
 		 <p>Author: Denzel Abraham</p>
@@ -101,9 +144,9 @@
 	<script>
 	var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
 	var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-	  return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
+	return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
 })
-</script>
+	</script>
 	</body>
 			
 			
