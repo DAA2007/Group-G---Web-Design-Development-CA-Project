@@ -1,8 +1,11 @@
 <!DOCTYPE html> <!-- Very first line of code, tells which version of HTML the page is written in. --!>
 
 <html lang="en"> <!-- Language that the HTML will register to. --!>
-<!--Any lines of html codes between any tags starting from the top will be prioritised first.!-->
+<!--Any lines of html codes between any tags starting from the top will be prioritised first!-->
 <!--"X id="x"" or "X class="x" will always have their own meaning which also allows them to be editted individually in style.css !-->
+<!-- It is important to include a closing tag if we want our code to work. Example: </title>, </body>, </p>, </script> !-->
+<!-- Closing html is also essential to getting the whole coding working. !-->
+
 	<head>
 		<title>Group G - Impacts</title> <!-- Title's name that is displayed on the tab. --!>
 		<meta charset="utf-8"> <!-- Character sets the HTML uses. --!>
@@ -19,135 +22,137 @@
 	</head>
 	<body> <!--Contains most of the informations that are displayed onto the page.--!>
 	
-	<nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
+	<header id="header_body">
+		</header>
+	
+	<nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
+	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
+	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
 	 <div class="container-fluid">
-	  <ul class="navbar-nav">
+	  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered !-->
 	  <li class="nav-item logo">
+			<!--Href is a way to transfer the user into a website using a link. --!>
+			<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. --!>
+			<!--The title which is the text "NCI" will also display as a header in the UI popup display.--!>
 			<a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website.">
-			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a>
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website."
+			data-bs-custom-class="custom-popover text-primary border-4 border-info">
+			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.--!>
 		</li>
-		 <li class="navbar-brand" href="#">
+		 <li class="navbar-brand" href="">
         <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
 		</li>
 	  <ol class="breadcrumb">
+	  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. --!>
 		<li class="breadcrumb-item"><a href="../group_website/website.html" title="Home" 
-				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage.">Home</a></li>
-		<li class="breadcrumb-item active" aria-current="page">Impacts</li>
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Home</a></li> <!--Similar process to the NCI link except we don't need to assign an image with a link. --!>
+		<li class="breadcrumb-item active" aria-current="page">Impacts</li> <!--Adding active to the li class can help the users know that this is the current webpage. --!>
 	  </ol>
 	</ul>
   </div>
 </nav>
 
-	<header>
-
 	<nav aria-label="PagesOfContent-navi"> <!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
-  <ul class="pagination justify-content-end"> <!--Assigns the whatever page-links to the right.--!>
+  <ul class="pagination justify-content-end"> <!--Ul formats the page-items lists--!>
+  <!--Justify-content-end assigns the whatever page-links to the right.--!>
 		<li class="page-item">
-		  <a class="page-link" href="causes.html" tabindex="-1">Previous</a>
+		  <a class="page-link" href="causes.html" tabindex="-1">Previous</a> <!--Tabindex decides where the webpage should next navigate. --!>
+		  <!--This will go back to my causes webpage when clicked on. --!>
 		</li>
-		<li class="page-item active"><a class="page-link">5</a></li>
-		<li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">6</a></li>
-		<li class="page-item"><a class="page-link" href="../webpage_kris/contact.html">7</a></li>
+		<li class="page-item active"><a class="page-link">5</a></li> <!--Here we don't need a href as we are in the current page. Using active can highlight the page-item. --!>
+		<li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">6</a></li> <!--Simply moves a number to kris' solutions page. --!>
+		<li class="page-item"><a class="page-link" href="../webpage_kris/contact.html">7</a></li> <!--If the user clicks on 6 however, it can send them two pages forwards. --!>
 		<li class="page-item">
-		  <a class="page-link" href="../webpage_kris/solutions.html">Next</a>
+		  <a class="page-link" href="../webpage_kris/solutions.html">Next</a> <!--Moves onto the kris' solutions webpage. --!>
     </li>
   </ul>
 </nav>
-	<header id="header_body">
-	<div id="body_title">
+	<div id="topic_div"> <!-- The div of causes meaning the entire content will be under a div !-->
 
-	<h1 id ="Title_Heading">The Impacts</h1> <!--My heading -->
-		<p id ="Title_Subheading">The tragic aftermath..</p>
-		<!-- This text which will be displayed. --!>
-		<!-- The lack of refreshing water notably leads to devastating effects such as individuals from families receiving detrimental diseases, this is articulated by 800+ children dying on a regular basis. !-->
-		<!-- Not to mention, . !-->
+	<h1 class="text-primary" id ="Title_Heading">The Impacts</h1> <!--My heading -->
+		<h4 class="text-primary" id="Title_Subtitle">The tragic aftermath..</h4> <!--A much smaller heading, emphasising as a substitle.-->
+		<!-- I added individual divs here to make it stand out more than my causes.html. --!>
+		<div class="container-fluid">
+		<!-- P serves as text which will be displayed. --!>
+		<p class ="text-info" id="paragraph-description-text">The lack of refreshing water notably leads to devastating effects such as individuals from families receiving detrimental diseases,
+		this is articulated by 800+ children dying on a regular basis.<p>
+		</div>
 		
-		<!--However, there are ongoing attempts to solve this current state and prevent these dreadful impacts from happening which are...!-->
+		<div class="container-fluid">
+		<p class ="text-info" id="paragraph-description-text">Not to mention, . !<p>
+		</div>
 		
-			<h4>
-  <a class="btn btn-primary content" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" aria-controls="multiCollapseContent">Open Content</a>
-</h4>
+		<div class="container-fluid">
+		<p class ="text-info" id="paragraph-description-text">However, there are ongoing attempts to solve this current state and prevent these dreadful impacts from happening which are...!<p>
+		</div>
+		
+<h4><a class="btn content text-info border-4 border-info" id="content_bar" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" 
+  aria-controls="multiCollapseContent" style="background-color: #e3f2fd;"
+  <button onclick="content_text_change()">Open Content</button></a></h4> <!--Buttons can have functions that can be made through usages such as onclick, id, etc. --!>
+
 <div class="row">
   <div class="col">
-    <div class="collapse multi-collapse" id="Content">
-	  <nav class="nav flex-column">
-      <a class="nav-link about" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look to see what Clean Water and Sanitation is about.">About</a>
-			<a class="nav-link quiz" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look at each and every photos.">Gallery</a>
-		<a class="nav-link" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation">Facts</a>
-	  <a class="nav-link" href="causes.html" title="Causes (Created by Denzel)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Learn about the coincidences and results.">Causes</a>
-		 <a class="nav-link disabled" aria-current="page" href="#">>Impact</a>
-	  <a class="nav-link" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems.">Solutions</a>
-		<a class="nav-link" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts.">Contact</a>
-	  <a class="nav-link quiz" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself.">Quiz</a>
-	  <a class="nav-link quiz" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See all of the contributes made.">Credits</a>
+    <div class="collapse multi-collapse" id="Content" >  <!--Collapse multi-collapse will allow the navigation links below to be fully opened or closed. --!>
+	  <nav class="nav flex-column">  <!--Nav can also get the a classes links to stack on top of each others using flex-column. --!>
+			<!--I used data-bs for each individual a href links as I can show what they are supposed to represent. --!>
+			<a class="nav-link about text-decoration-underline" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
+			 data-bs-content="Take a look to see what Clean Water and Sanitation is about." data-bs-toggle="popover" data-bs-trigger="hover"
+			 data-bs-custom-class="custom-popover text-primary border-4 border-info">About</a>
+			<a class="nav-link quiz text-decoration-underline" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look at each and every photos."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Gallery</a>
+			<a class="nav-link facts text-decoration-underline" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation"
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Facts</a>
+		    <a class="nav-link disabled" aria-current="page" href="#">>Impact</a>  <!--Unlike the other links, this one can be disabled and therefore inaccessible because there's no link between the href's quotations. --!>
+			 <a class="nav-link causes text-decoration-underline" aria-current="page" href="causes.html" title="Causes (Created by Denzel)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="What really contributed to all of this?"
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Causes</a>
+		    <a class="nav-link solutions text-decoration-underline" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Solutions</a>
+			<a class="nav-link contact text-decoration-underline" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Contact</a>
+		    <a class="nav-link quiz text-decoration-underline" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Quiz</a>
+		    <a class="nav-link credits text-decoration-underline" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See all of the contributes made."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Credits</a>
 		</nav>
     </div>
   </div>
 </div>
 
-<!-- Offcanvas Sidebar -->
-<div class="offcanvas offcanvas-start" id="demo">
-  <div class="offcanvas-header">
-    <h1 class="offcanvas-title">Content</h1>
-	<p>What page do you want to head to?</p>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas">Close Content</button>
-  </div>
-  <div class="offcanvas-body">
-    <a class="nav-link about" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look to see what Clean Water and Sanitation is about.">About</a>
-			<a class="nav-link quiz" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look at each and every photos.">Gallery</a>
-		<a class="nav-link" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation">Facts</a>
-	  <a class="nav-link" href="causes.html" title="Causes (Created by Denzel)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Learn about the coincidences and results.">Causes</a>
-		 <a class="nav-link disabled" aria-current="page" href="#">>Impact</a>
-	  <a class="nav-link" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems.">Solutions</a>
-		<a class="nav-link" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts.">Contact</a>
-	  <a class="nav-link quiz" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself.">Quiz</a>
-	  <a class="nav-link quiz" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See all of the contributes made.">Credits</a>
-    <button class="btn btn-secondary" type="button">Previous Page</button>
-	<button class="btn btn-secondary" type="button">Next Page</button>
-	<p>Or</p>
-	<button class="btn btn-secondary" type="button">Close</button>
-  </div>
-</div>
-
-<!-- Button to open the offcanvas sidebar -->
-<div class="container-fluid mt-3">
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-  Open Offcanvas Sidebar
-</button>
-</div>
-
-		
 		<footer id="author_credit">
 		 <p>Author: Denzel Abraham</p>
 		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a></p> <!-- Footer is added to include the author's name which is of course me, Denzel Abraham. --!>
-	    </footer>	
-		
+	    </footer>		
 	</div>
-	</header>
-	<script>
-	var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
-	var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-	return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
+	
+	<script> //The Scripts, what allows javascript
+		//Script 1 - Making a display popup trigger on every nav-link.
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen.
 })
+	//Script 2 - Making a changing text on "content_bar" using a function.
+			//What this does is assigns the a tag content_bar id into a variable.
+			//Function is used to address the button onclick and content_text_change contains the whole coding process.
+			//It then checks if that variable text is the same as its a-tag counterpart. 
+			//If it is, the innerhtml will register as "Close Content", else vice versa, it will be "Open Content".
+		function content_text_change() {
+	    var contentbar = document.getElementById("content_bar");
+	        if (contentbar.innerHTML === "Open Content") {
+		    contentbar.innerHTML = "Close Content";
+	  } else {
+		    contentbar.innerHTML = "Open Content";
+  }
+}
 	</script>
-	</body>
-			
-			
+</body>
+	
 </html>
+<!--All comments and known knowledge by me, NO AI used.--!> 
