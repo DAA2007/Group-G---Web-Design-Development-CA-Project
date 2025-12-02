@@ -1,0 +1,175 @@
+<!DOCTYPE html> <!-- Very first line of code, tells which version of HTML the page is written in. --!>
+
+<html lang="en"> <!-- Language that the HTML will register to. --!>
+<!--Any lines of html codes between any tags starting from the top will be prioritised first!-->
+<!--"X id="x"" or "X class="x" will always have their own meaning which also allows them to be editted individually in style.css !-->
+<!-- It is important to include a closing tag if we want our code to work. Example: </title>, </body>, </p>, </script> !-->
+<!-- Closing html is also essential to getting the whole coding working. !-->
+<!-- Spacing is very crucial since it makes our HTML look more readable and tidy. !-->
+<!-- Paragraph texts or any 1:1 elements can have reused codes since they follow the same fundamentals as having indentical purposes.--!>
+<!-- This is first webpage I started working on. --!>
+
+	<head>
+		<title>Group G - Causes</title> <!-- Title's name that is displayed on the tab. --!>
+		<meta charset="utf-8"> <!-- Character sets the HTML uses. --!>
+		<meta name="viewport" content="width=device-width, 
+		initial-scale=1.0" /> <!--Allows the webpage to be resized.-->
+		
+		<link rel="stylesheet" href="css/style.css"> <!--Gets the html file to search for an avaliable CSS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--Grabs the fonts for the html.-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Loads Bootstrap ver. 5 for CSS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!--Loads Bootstrap ver. 5 for JS-->
+	</head>
+	<body> <!--Contains most of the informations that are displayed onto the page.--!>
+	
+		<header id="header_body">
+		</header>
+	
+	<nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
+	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
+	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
+	 <div class="container-fluid">
+	  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered !-->
+	  <li class="nav-item logo">
+			<!--Href is a way to transfer the user into a website using a link. --!>
+			<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. --!>
+			<!--The title which is the text "NCI" will also display as a header in the UI popup display.--!>
+			<a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website."
+			data-bs-custom-class="custom-popover text-primary border-4 border-info">
+			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.--!>
+		</li>
+		 <li class="navbar-brand" href="">
+        <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
+		</li>
+	  <ol class="breadcrumb">
+	  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. --!>
+		<li class="breadcrumb-item"><a href="../group_website/website.html" title="Home" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Home</a></li> <!--Similar process to the NCI link except we don't need to assign an image with a link. --!>
+		<li class="breadcrumb-item active" aria-current="page">Causes</li>   <!--Adding active to the li class can help the users know that this is the current webpage. --!>
+	  </ol>
+	</ul>
+  </div>
+</nav>
+
+	<nav aria-label="PagesOfContent-navi"> <!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
+  <ul class="pagination justify-content-end"> <!--Ul formats the page-items lists--!>
+  <!--Justify-content-end assigns the whatever page-links to the right.--!>
+		<li class="page-item">
+		  <a class="page-link" href="../webpage_jiisna/facts.html" tabindex="-1">Previous</a> <!--Tabindex decides where the webpage should next navigate. --!>
+		  <!--This will go back to Jiisna's facts webpage when clicked on. --!>
+		</li>
+		<li class="page-item active"><a class="page-link border-1 border-dark">4</a></li> <!--Here we don't need a href as we are in the current page. Using active can highlight the page-item. --!>
+		<li class="page-item"><a class="page-link" href="impact.html">5</a></li> <!--Simply moves a number to my impact page. --!>
+		<li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">6</a></li> <!--If the user clicks on 6 however, it can send them two pages forwards. --!>
+		<li class="page-item">
+		  <a class="page-link" href="impact.html" tabindex="+1" >Next</a> <!--Similarly to the other one, moves onto the next webpage which is my impact page. --!>
+    </li>
+  </ul>
+</nav>
+	
+	<div class="" id="topic_div">  <!-- The div of causes meaning the entire content will be under a div !-->
+	
+	<h1 class="text-primary" id="Title_Heading">The Causes - Clean Water & Sanitation</h1> <!--My heading -->
+		<h4 class="text-primary" id="Title_Subtitle">What caused the causes?</h4> <!--A much smaller heading, emphasising as a substitle.-->
+		<img id="MainImageDisplay" src="images/pexels-leeloothefirst-5428829.jpg" alt="Question mark?" width="500" height="200">
+		<div class="container-fluid">
+		<!-- P serves as text which will be displayed. --!>
+		<p class ="text-info" id="paragraph-description-text">So what exactly is causing the issues? Well, to be put things into perspective, we first need to look at the water supply resources and its prevalent issues! 
+		    According to United Nations Office for Outer Space Affairs, it is estimated across the globe that 663 millions doesn't have access to improved water sources, essentially no fresh water sources.
+			There are among many factors that advocades this turbulent crisis, here are the most noteworthy ones:<p>
+			
+			<ul> <!--This Ul is the body of li, which can include or alter bullets on the unordered li(lists).--!>
+			<!-- Notice how I am reusing code here, only difference is that I am altering the texts. --!>
+			<h5><li class="text-primary">Shortages of fresh water due to droughts. (As already mentioned!)</li></h5>
+			<h5><li class="text-primary">Bad hygiene practices.</li></h5>
+			<h5><li class="text-primary">A lack of clean infrastructure.</li></h5>
+			</ul>
+			
+			<p class="text-info" id="and-text">And...<p>		
+			
+			<ul>
+			<h5><li class="text-primary">No awareness on the situtation.</li></h5>
+			</ul>
+            
+			<p class="text-info" id="paragraph-description-text">As a result, these causes mentioned contributes to many significant losses and deaths leads to... <p>		
+		</div>
+		
+		<img id="SecondaryImageDisplay" src="images/pexels-malama-mushitu-2148898721-34197979.jpg" alt="Broken tap water." width="150">
+		
+  <h4><a class="btn content text-info border-4 border-info" id="content_bar" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" 
+  aria-controls="multiCollapseContent" style="background-color: #e3f2fd;"
+  <button onclick="content_text_change()">Open Content</button></a></h4> <!--Buttons can have functions that can be made through usages such as onclick, id, etc. --!>
+
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="Content">  <!--Collapse multi-collapse will allow the navigation links below to be fully opened or closed. --!>
+	  <nav class="nav flex-column">  <!--Nav can also get the a classes links to stack on top of each others using flex-column. --!>
+			<!--I used data-bs for each individual a href links as I can show what they are supposed to represent. --!>
+			<!-- Another definition of reusing code illustrated here, saving me time. --!>
+			<a class="nav-link about text-decoration-underline" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
+			 data-bs-content="Take a look to see what Clean Water and Sanitation is about." data-bs-toggle="popover" data-bs-trigger="hover"
+			 data-bs-custom-class="custom-popover text-primary border-4 border-info">About</a>
+			<a class="nav-link quiz text-decoration-underline" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look at each and every photos."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Gallery</a>
+			<a class="nav-link facts text-decoration-underline" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation"
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Facts</a>
+		  <a class="nav-link disabled" href="#">>Causes</a>   <!--Unlike the other links, this one can be disabled and therefore inaccessible because there's no link between the href's quotations. --!>
+			 <a class="nav-link impact text-decoration-underline" aria-current="page" href="impact.html" title="Impact (Created by Denzel)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The devastating effects."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Impact</a>
+		    <a class="nav-link solutions text-decoration-underline" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Solutions</a>
+			<a class="nav-link contact text-decoration-underline" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Contact</a>
+		    <a class="nav-link quiz text-decoration-underline" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Quiz</a>
+		    <a class="nav-link credits text-decoration-underline" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See all of the contributes made."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Credits</a>
+		</nav>
+    </div>
+  </div>
+</div>
+
+		<!-- Lastly for the HTML coding, we shouldn't forget who was behind the making of this.. --!>
+		<footer id="author_credit">
+		 <p>Author: Denzel Abraham</p>
+		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a></p> <!-- Footer is added to include the author's name which is of course me, Denzel Abraham. --!>
+	    </footer>	
+		</div>
+	
+		<script> //The Scripts, what allows javascript
+		//Script 1 - Making a display popup trigger on every nav-link.
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen.
+})
+		//Script 2 - Making a changing text on "content_bar" using a function.
+			//What this does is assigns the a tag content_bar id into a variable.
+			//Function is used to address the button onclick and content_text_change contains the whole coding process.
+			//It then checks if that variable text is the same as its a-tag counterpart. 
+			//If it is, the innerhtml will register as "Close Content", else vice versa, it will be "Open Content".
+		function content_text_change() {
+	    var contentbar = document.getElementById("content_bar");
+	        if (contentbar.innerHTML === "Open Content") {
+		    contentbar.innerHTML = "Close Content";
+	  } else {
+		    contentbar.innerHTML = "Open Content";
+  }
+}
+		<!-- Closing tags which is required to making this whole HTML process work as already mentioned. --!>
+		</script>
+	</body>
+			
+</html>
+<!--All comments, HTML/CSS/JS coding and known knowledge by me, NO AI used.--!>
