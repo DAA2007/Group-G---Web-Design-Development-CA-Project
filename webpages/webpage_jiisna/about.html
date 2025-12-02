@@ -30,34 +30,33 @@
 	<body>
 	   
 		 <!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->		
-	    <nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;">
-	        <div class="container-fluid">
-	             <ul class="navbar-nav">
-	                <li class="nav-item logo">
-			             <a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="Browser NCI">
-			             <img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a>
-		            </li>
-		            <li class="navbar-brand" href="#">
-                         <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
-		             </li>
-		             <li class="nav-item about">
-			             <a class="nav-link about" href="webpages/webpage_jiisna/about.html" title="Information">About</a>
-		             </li>
-	                 <li class="nav-item gallery">
-			             <a class="nav-link gallery" href="webpages/webpage_karim/gallery.html" title="View Pictures">Gallery</a>
-		             </li>
-		             <li class="nav-item quiz">
-			             <a class="nav-link quiz" href="webpages/webpage_karim/quiz.html" title="Test Yourself">Quiz</a>
-		             </li>
-		             <li class="nav-item credits">
-		         	     <a class="nav-link credits" href="webpages/webpage_kris/credits.html" title="View the Credits">Credits</a>
-		             </li>
-		             <li class="nav-item home float-end">
-			             <a class="nav-link home float-end" href="Group-G---Web-Design-Development-CA-Project/webpages/website.html" title="Return back to Home">Home</a>
-		             </li>
-	             </ul>
-             </div>
-        </nav>
+	    	<nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
+	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
+	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
+		   <div class="container-fluid">
+			  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered !-->
+			     <li class="nav-item logo">
+					<!--Href is a way to transfer the user into a website using a link. --!>
+					<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. --!>
+					<!--The title which is the text "NCI" will also display as a header in the UI popup display.--!>
+					<a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
+					data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website."
+					data-bs-custom-class="custom-popover text-primary border-4 border-info">
+					<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.--!>
+				</li>
+				 <li class="navbar-brand" href="">
+				<img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
+				</li>
+			  <ol class="breadcrumb">
+			  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. --!>
+				<li class="breadcrumb-item"><a href="../group_website/website.html" title="Home" 
+						data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage."
+						data-bs-custom-class="custom-popover text-primary border-4 border-info">Home</a></li> <!--Similar process to the NCI link except we don't need to assign an image with a link. --!>
+				<li class="breadcrumb-item active" aria-current="page">About</li>   <!--Adding active to the li class can help the users know that this is the current webpage. --!>
+			  </ol>
+			</ul>
+		  </div>
+		</nav>
 
 		<!--about section-->
 		<div class="container">
@@ -124,16 +123,13 @@
 
 		<!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
 	    <nav aria-label="PagesOfContent-navi">
-			<!--Assigns the whatever page-links to the right.-->
+			<!--Justify-content-end assigns whatever page-links to the right.--!>
 		  <ul class="pagination justify-content-end">	
-	        <li class="page-item">
-		        <a class="page-link" href="#" tabindex="-1">Previous</a>
-		    </li>
-		    <li class="page-item active"><a class="page-link">5</a></li>
-		    <li class="page-item"><a class="page-link" href="impact.html">6</a></li>
-		    <li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">7</a></li>
+		    <li class="page-item active"><a class="page-link">1</a></li>
+		    <li class="page-item"><a class="page-link" href="../webpage_karim/gallery.html">2</a></li> <!-- Goes a page to Karim's gallery webpage. --!>
+		    <li class="page-item"><a class="page-link" href="facts.html">3</a></li> <!-- Skips two pages forwards to your facts.html --!>
 		    <li class="page-item">
-		    <a class="page-link" href="impact.html">Next</a>
+		    <a class="page-link" href="../webpage_karim/gallery.html">Next</a> <!--Continues a page forwards. --!>
             </li>
           </ul>
         </nav>
