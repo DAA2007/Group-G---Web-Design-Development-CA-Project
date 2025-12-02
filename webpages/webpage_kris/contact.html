@@ -1,12 +1,19 @@
 <DOCTYPE.html>
   <html lang="en"> 
   <head> 
-  <title> Solutions - Clean Water and Sanitation </title>
+  <title> Contact Us </title>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="device-width, initial-scale=1"/>
   <meta name="author" content="Khrystyna Kokhanovska">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel=stylesheet>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="style.css"> <!--connection to google fonts-->
+
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel=stylesheet>
+ 
     <!--Solutions page created by Khrystyna Kokhanovska -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> </script>
   <style>
@@ -17,50 +24,35 @@
   </head>
 
   <body> 
-    
-    <nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> 
-  <div class="container-fluid">
-   <ul class="navbar-nav">
-   <li class="nav-item logo">
-   <a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
-   data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website.">
-   <img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a>
-  </li>
-   <li class="navbar-brand" href="#">
-        <img src="images/logo.jpg" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
-  </li>
-  <li class="nav-item about">
-   <a class="nav-link about" href="webpages/webpage_jiisna/about.html" title="About" 
-   data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look to see what Clean Water and Sanitation is about.">About</a>
-  </li>
-  <li class="nav-item gallery">
-   <a class="nav-link gallery" href="webpages/webpage_karim/gallery.html" title="Gallery" 
-   data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See Pictures.">Gallery</a>
-  </li>
-  <li class="nav-item quiz">
-   <a class="nav-link quiz" href="webpages/webpage_karim/quiz.html" title="Quiz" 
-   data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself.">Quiz</a>
-  </li>
-  <li class="nav-item credits">
-   <a class="nav-link credits" href="webpages/webpage_kris/credits.html" title="Credits" 
-   data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See the Credits.">Credits</a>
-  </li>
-  <li class="nav-item home float-end">
-      <a class="nav-link home float-end" href="Group-G---Web-Design-Development-CA-Project/webpages/website.html" title="Home" 
-   data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage.">Home</a>
-  </li>
- </ul>
+  <nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
+	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
+	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
+	 <div class="container-fluid">
+	  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered !-->
+	  <li class="nav-item logo">
+			<!--Href is a way to transfer the user into a website using a link. --!>
+			<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. --!>
+			<!--The title which is the text "NCI" will also display as a header in the UI popup display.--!>
+			<a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website."
+			data-bs-custom-class="custom-popover text-primary border-4 border-info">
+			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.--!>
+		</li>
+		 <li class="navbar-brand" href="">
+        <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
+		</li>
+	  <ol class="breadcrumb">
+	  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. --!>
+		<li class="breadcrumb-item"><a href="../group_website/website.html" title="Home" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Home</a></li> <!--Similar process to the NCI link except we don't need to assign an image with a link. --!>
+		<li class="breadcrumb-item active" aria-current="page">Contact</li>   <!--Adding active to the li class can help the users know that this is the current webpage. --!>
+	  </ol>
+	</ul>
   </div>
 </nav>
-
-<script>
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
-})
-</script>
 <!-- this is navigation section-->
-    <h1> Contact <h1> 
+    <h1> Solutions <h1> 
   <main class= "container py-4 main"> 
 
 <!-- Here is the main content section-->
@@ -92,8 +84,8 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 </div>
 <!-- this is the container from bootstrap-->
   </main>
-  <footer class="bg-light text-center py-3 mt-5">
-    <p class="mb-0">© 2025 Clean Water Project — Author: Khrystyna Kokhanovska</p>
+ <footer class="bg-light text-center py-1 mt-5 footer">
+    <p class="mb-0 small">© 2025 Clean Water Project — Author: Khrystyna Kokhanovska</p>
   </footer>
   <!--footer for webpage-->
   

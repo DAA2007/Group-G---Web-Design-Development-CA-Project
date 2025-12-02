@@ -1,12 +1,23 @@
-<DOCTYPE.html>
-  <html lang="en"> 
-  <head> 
-  <title> Solutions - Clean Water and Sanitation </title>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="device-width, initial-scale=1"/>
-  <meta name="author" content="Khrystyna Kokhanovska">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel=stylesheet>
+<!DOCTYPE html> <!-- Very first line of code, tells which version of HTML the page is written in. --!>
+ 
+<html lang="en"> <!-- Language that the HTML will register to. --!>
+
+	<head> 
+		<title>Group G - Solutions</title> <!-- Title's name that is displayed on the tab. --!>
+		<meta charset="utf-8"> <!-- Character sets the HTML uses. --!>
+		<meta name="viewport" content="width=device-width, 
+		initial-scale=1.0" /> <!--Allows the webpage to be resized.-->
+	    <meta name="author" content="Khrystyna Kokhanovska">
+		
+		<link rel="stylesheet" href="style.css"> <!--connection to google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--Grabs the fonts for the html.-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!-- Selected font. --!>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Loads Bootstrap ver. 5 for CSS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!--Loads Bootstrap ver. 5 for JS-->
+ 
     <!--Solutions page created by Khrystyna Kokhanovska -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> </script>
   <style>
@@ -16,87 +27,147 @@
   </style>
   </head>
 
-  <body> 
+  <body> <!--Contains most of the informations that are displayed onto the page.--!>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel=stylesheet>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="images/logo.jpg" alt="Clean Water Logo" width="40" height="40" class="d-inline-block align-text-top">
-    </a>
-  </div>
-  <div class="container-fluid">
-    <a class="navbar-brand" href="website.html">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="webpages/webpage_jiisna/about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="webpages/webpage_denzel/impact.html">Impact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="webpages/webpage_denzel/causes.html">Causes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="webpages/webpage_kris/solutions.html">Solutions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="webpages/webpage_karim/gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="webpages/webpage_jiisna/facts.html">Facts</a>
-        </li><li class="nav-item">
-          <a class="nav-link" href="webpages/webpage_karim/quiz.html">Quiz</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="webpages/webpage_kris/contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
+  <nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
+	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
+	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
+	 <div class="container-fluid">
+	  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered !-->
+	  <li class="nav-item logo">
+			<!--Href is a way to transfer the user into a website using a link. --!>
+			<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. --!>
+			<!--The title which is the text "NCI" will also display as a header in the UI popup display.--!>
+			<a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website."
+			data-bs-custom-class="custom-popover text-primary border-4 border-info">
+			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.--!>
+		</li>
+		 <li class="navbar-brand" href="">
+        <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
+		</li>
+	  <ol class="breadcrumb">
+	  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. --!>
+		<li class="breadcrumb-item"><a href="../group_website/website.html" title="Home" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Home</a></li> <!--Similar process to the NCI link except we don't need to assign an image with a link. --!>
+		<li class="breadcrumb-item active" aria-current="page">Solutions</li> <!--Adding active to the li class can help the users know that this is the current webpage. --!>
+	  </ol>
+	</ul>
   </div>
 </nav>
+
+<nav aria-label="PagesOfContent-navi"> <!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
+  <ul class="pagination justify-content-end"> <!--Ul formats the page-items lists--!>
+  <!--Justify-content-end assigns the whatever page-links to the right.--!>
+		<li class="page-item">
+		  <a class="page-link" href="../webpage_denzel/impact.html" tabindex="-1">Previous</a> <!--Tabindex decides where the webpage should next navigate. --!>
+		  <!--This will go back to my causes webpage when clicked on. --!>
+		</li>
+		<li class="page-item"><a class="page-link" href="../webpage_denzel/impact.html">5</a></li> <!--Goes a page backwards. --!>
+		<li class="page-item active"><a class="page-link">6</a></li> <!--Here we don't need a href as we are in the current page. Using active can highlight the page-item. --!>
+		<li class="page-item"><a class="page-link" href="contact.html">7</a></li> <!--Simply moves a number to kris' contact page. --!>
+		<li class="page-item">
+		  <a class="page-link" href="contact.html" tabindex="+1">Next</a> <!--Moves onto the kris' contact webpage. --!>
+    </li>
+  </ul>
+</nav>
+
 <!-- this is navigation section-->
-    <h1> Solutions <h1> 
+    <h1 class="heading1 text-center text-primary mt-4 mb-4"> Solutions </h1> 
+	    <h4 class="text-center text-muted mt-4 mb-41"> List of Solutions: <h4> 
   <main class= "container py-4 main"> 
 
 <!-- Here is the main content section-->
 <div class="container text-center">
   <div class="row">
     <div class="col">
-      <h3> Water Filtration </h3>
-      <p> Low-cost filters for safe drinking water </p>
+      <section class="solutionCard p-3 shadow rounded border border-4 border-info" style="background-color: #e3f2fd;"> <!-- section - separate my cards as different meaningful parts of the page-->
+      <h5 class="text-center text-muted mb-1"> <span class="badge bg-primary me-2">1</span> Water Filtration </h5>
+      <h2 class="text-center text-primary mb-4"> Low-cost filters for safe drinking water </h2>
+      <img class="img-fluid solution-img rounded" src="images/filter.jpg" alt="image of filter" /> <!-- fluid solution - makes my image more adaptive for my solution card-->
+      <!--https://cowag.com.au/wp-content/uploads/2025/01/Copy-of-Website-Post-Main-Image-3-1200x600.jpg-->
+      <p class="mt-3 text-center text-info"> Simple household filters that remove dirt and bacteria and make water safe to drink. Unfortunately, mostly of social and economic activities contributed to water contamination, which adversely affected water quality. A water contaminant refers to any substance other than water molecules that, when present above a certain threshold, potentially cause harm to humans, animals, or the environment.<br> 
+        <a href="https://iwaponline.com/wpt/article/19/8/3051/103347/Overview-of-the-low-cost-technologies-for"> Click here to read more about importance and differences of water filters </a></p>
+    
+    </div>
     </div>
     <div class="col">
-       <h3> Rainwater Harvesting </h3>
-      <p> Rainwater collection for community use </p>
-    </div>
+       <section class="solutionCard p-3 shadow rounded border border-4 border-info" style="background-color: #e3f2fd;">
+       <h5 class="text-center text-muted mb-1"> <span class="badge bg-primary me-2">2</span> Rainwater Harvesting </h5> 
+      <h2 class="text-center text-primary mb-4"> Rainwater collection for community use </h2>
+      <img class="img-fluid solution-img rounded" src="images/rainwater.jpg" alt="image of rainwater collection" />
+      <!--https://www.treehugger.com/thmb/FvhpZOdN0bI7yo8Q_fEnJYICGG0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/beginners-guide-to-rainwater-harvesting-5089884_V3-d4a6f6a568fc4f348598d9b98f96b6b7.png-->
+       <p class="mt-3 text-center text-info"> Rainwater harvesting is an example of a primary element of integrated water management.  It can play a vital role in reducing pressure on public water utilities and infrastructure, while also making cities more resilient to the effects of climate change. <br>
+        <a href="https://www.kingspan.com/ie/en/knowledge-articles/rainwater-harvesting-for-water-conservation/"> Click here to read more about the role of rainwater harvesting </a></p>
   </div>
-  <div class="row">
-    <div class="col">
-     <h3> Education </h3>
-      <p> Teach proper sanitation practices </p>
+      <div class="col">
+      <section class="solutionCard p-3 shadow rounded border border-4 border-info" style="background-color: #e3f2fd;">
+     <h5 class="text-center text-muted mb-1"> <span class="badge bg-primary me-2">3</span> Education </h5>
+      <h2 class="text-center text-primary mb-4"> Teach appropriate usage practices </h2>
+      <img class="img-fluid solution-img rounded" src="images/practices.jpg" alt="image of sanitation practices" /> <br>
+      <!--https://www.wateroam.com/uploads/2/8/6/0/28600353/minimum-water-requirements-infographic-orig_orig.jpg-->
+       <p class="mt-3 text-center text-primary"> Top tips to save water <ol class="ol" >
+         <li class="text-info"> Spend less time in the shower </li>
+         <li class="text-info"> Turn off the tap when brushing your teeth </li>
+         <li class="text-info"> Reuse water </li>
+         <li class="text-info"> Get a water butt to collect rainwater </li>
+         <li class="text-info"> Fill the kettle less </li>
+         <li class="text-info"> Use full loads for your washing machine and dishwasher </li>
+         <li class="text-info"> Maintain your appliances </li>
+         <li class="text-info"> Use the shower instead of the bath </li>
+         <li class="text-info"> Use water saving devices </li>
+       </ol> <br>
+       <a href="https://energysavingtrust.org.uk/simple-ways-to-save-water-at-home/"> Click here to get more details on each of these tips </a> </p>
     </div>
+
     <div class="col">
-      <h3> Water Filtration </h3>
-      <p> Low-cost filters for safe drinking water </p>
-    </div>
-    <div class="col">
-       <h3> Water Filtration </h3>
-      <p> Low-cost filters for safe drinking water </p>
+      <section class="solutionCard p-3 shadow rounded border border-4 border-info" style="background-color: #e3f2fd;">
+      <h5 class="text-center text-muted mb-1"><span class="badge bg-primary me-2">4</span> Handwashing Stations</h5>
+      <h2 class="text-center text-primary mb-4">Install low-cost stations to improve hygiene in schools</h2>
+      <img class="img-fluid solution-img rounded" src="images/stations.jpg" alt="image of water station" />
+      <!--https://civiq.com.au/wp-content/uploads/2023/02/hand-washing-cat-image-scaled.webp?x82937-->
+       <p class="mt-3 text-center text-info"> Schools are critical for the control and spread of many infectious diseases, including COVID-19, depending on their access to and quality of water, sanitation, and hygiene (WASH) and the implementation of WASH interventions. Water, sanitation, and hygiene are fundamental human requirements and have an impact on ensuring basic rights to decent standards of living and health<br> 
+        <a href="https://iwaponline.com/washdev/article/15/9/713/109017/Water-sanitation-and-hygiene-interventions-in"> Click here to get to know more on this</a></p>
+    </section>
+      </div>
     </div>
   </div>
 </div>
 <!-- this is the container from bootstrap-->
   </main>
-  <footer class="bg-light text-center py-3 mt-5">
-    <p class="mb-0">© 2025 Clean Water Project — Author: Khrystyna Kokhanovska</p>
+  <footer class="bg-light text-center py-1 mt-5 footer">
+    <p class="mb-0 small">© 2025 Clean Water Project — Author: Khrystyna Kokhanovska</p>
   </footer>
   <!--footer for webpage-->
-  
+
+<button id="backToTop"> Back To Top </button> <!--back to top button: Khrystyna-->
+  <script> 
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))  
+
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) { 
+
+  return new bootstrap.Popover(popoverTriggerEl) //* calls the bootstrap to show "popover" on the  screen 
+
+}) 
+    const backToTopBtn = document.getElementById ("backToTop"); 
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display="block";
+      }
+      else {
+        backToTopBtn.style.display="none";
+      }
+    }); //* Java Script code to allow user get back to top. It basically waits untill "scroll" event happens for more than 300px and then shows the button on the screen in the left corner, I found it this method on youtube - Khrystyna
+
+    backToTopBtn.addEventListener("click", ()=> {
+      window.scrollTo({ top:0, behavior:"smooth"
+      });
+    }); 
+  </script>
+
   </body>
   </html>
   
