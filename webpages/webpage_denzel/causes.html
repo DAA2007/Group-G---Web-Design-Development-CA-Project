@@ -5,6 +5,9 @@
 <!--"X id="x"" or "X class="x" will always have their own meaning which also allows them to be editted individually in style.css !-->
 <!-- It is important to include a closing tag if we want our code to work. Example: </title>, </body>, </p>, </script> !-->
 <!-- Closing html is also essential to getting the whole coding working. !-->
+<!-- Spacing is very crucial since it makes our HTML look more readable and tidy. !-->
+<!-- Paragraph texts or any 1:1 elements can have reused codes since they follow the same fundamentals as having indentical purposes.--!>
+<!-- This is first webpage I started working on. --!>
 
 	<head>
 		<title>Group G - Causes</title> <!-- Title's name that is displayed on the tab. --!>
@@ -60,11 +63,11 @@
 		  <a class="page-link" href="../webpage_jiisna/facts.html" tabindex="-1">Previous</a> <!--Tabindex decides where the webpage should next navigate. --!>
 		  <!--This will go back to Jiisna's facts webpage when clicked on. --!>
 		</li>
-		<li class="page-item active"><a class="page-link border-1 border-dark">4</a></li> <!--Here we don't need a href as we are in the current page. Using active can highlight the page-item. --!>
+		<li class="page-item"><a class="page-link" href="../webpage_jiisna/facts.html">3</a></li> <!--Goes a page backwards. --!>
+		<li class="page-item active"><a class="page-link">4</a></li> <!--Here we don't need a href as we are in the current page. Using active can highlight the page-item. --!>
 		<li class="page-item"><a class="page-link" href="impact.html">5</a></li> <!--Simply moves a number to my impact page. --!>
-		<li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">6</a></li> <!--If the user clicks on 6 however, it can send them two pages forwards. --!>
 		<li class="page-item">
-		  <a class="page-link" href="impact.html" tabindex="+1" >Next</a> <!--Similarly to the other one, moves onto the next webpage which is my impact page. --!>
+		  <a class="page-link" href="impact.html" tabindex="+1" >Next</a> <!--Similarly to the previous one, moves onto the next webpage which is my impact page. --!>
     </li>
   </ul>
 </nav>
@@ -73,7 +76,7 @@
 	
 	<h1 class="text-primary" id="Title_Heading">The Causes - Clean Water & Sanitation</h1> <!--My heading -->
 		<h4 class="text-primary" id="Title_Subtitle">What caused the causes?</h4> <!--A much smaller heading, emphasising as a substitle.-->
-		<img id="MainImageDisplay" src="images/pexels-leeloothefirst-5428829.jpg" alt="Question mark?" width="500" height="200">
+		<img id="MainImageDisplay" src="images/pexels-leeloothefirst-question_mark.jpg" alt="Question mark?.jpg" width="500" height="200">
 		<div class="container-fluid">
 		<!-- P serves as text which will be displayed. --!>
 		<p class ="text-info" id="paragraph-description-text">So what exactly is causing the issues? Well, to be put things into perspective, we first need to look at the water supply resources and its prevalent issues! 
@@ -81,6 +84,7 @@
 			There are among many factors that advocades this turbulent crisis, here are the most noteworthy ones:<p>
 			
 			<ul> <!--This Ul is the body of li, which can include or alter bullets on the unordered li(lists).--!>
+			<!-- Notice how I am reusing code here, only difference is that I am altering the texts. --!>
 			<h5><li class="text-primary">Shortages of fresh water due to droughts. (As already mentioned!)</li></h5>
 			<h5><li class="text-primary">Bad hygiene practices.</li></h5>
 			<h5><li class="text-primary">A lack of clean infrastructure.</li></h5>
@@ -95,7 +99,7 @@
 			<p class="text-info" id="paragraph-description-text">As a result, these causes mentioned contributes to many significant losses and deaths leads to... <p>		
 		</div>
 		
-		<img id="SecondaryImageDisplay" src="images/pexels-malama-mushitu-2148898721-34197979.jpg" alt="Broken tap water." width="150">
+		<img id="SecondaryImageDisplay" src="images/pexels-malama-mushitu-broken_tap.jpg" alt="Broken tap water.jpg" width="150">
 		
   <h4><a class="btn content text-info border-4 border-info" id="content_bar" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" 
   aria-controls="multiCollapseContent" style="background-color: #e3f2fd;"
@@ -106,6 +110,7 @@
     <div class="collapse multi-collapse" id="Content">  <!--Collapse multi-collapse will allow the navigation links below to be fully opened or closed. --!>
 	  <nav class="nav flex-column">  <!--Nav can also get the a classes links to stack on top of each others using flex-column. --!>
 			<!--I used data-bs for each individual a href links as I can show what they are supposed to represent. --!>
+			<!-- Another definition of reusing code illustrated here, saving me time. --!>
 			<a class="nav-link about text-decoration-underline" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
 			 data-bs-content="Take a look to see what Clean Water and Sanitation is about." data-bs-toggle="popover" data-bs-trigger="hover"
 			 data-bs-custom-class="custom-popover text-primary border-4 border-info">About</a>
@@ -135,7 +140,8 @@
     </div>
   </div>
 </div>
-		
+
+		<!-- Lastly for the HTML coding, we shouldn't forget who was behind the making of this.. --!>
 		<footer id="author_credit">
 		 <p>Author: Denzel Abraham</p>
 		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a></p> <!-- Footer is added to include the author's name which is of course me, Denzel Abraham. --!>
@@ -161,8 +167,9 @@
 		    contentbar.innerHTML = "Open Content";
   }
 }
+		<!-- Closing tags which is required to making this whole HTML process work as already mentioned. --!>
 		</script>
 	</body>
 			
 </html>
-<!--All comments and known knowledge by me, NO AI used.--!>
+<!--All comments, HTML/CSS/JS coding and known knowledge by me, NO AI used.--!>

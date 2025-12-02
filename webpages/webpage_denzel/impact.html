@@ -5,6 +5,10 @@
 <!--"X id="x"" or "X class="x" will always have their own meaning which also allows them to be editted individually in style.css !-->
 <!-- It is important to include a closing tag if we want our code to work. Example: </title>, </body>, </p>, </script> !-->
 <!-- Closing html is also essential to getting the whole coding working. !-->
+<!-- Spacing is very crucial since it makes our HTML look more readable and tidy. !-->
+<!-- Paragraph texts or any 1:1 elements can have reused codes since they follow the same fundamentals as having indentical purposes.--!>
+<!-- Speaking of reusing code, this was and still is an essential duplicated and altered webpage of my causes.html being my second webpage, this means I borrowed indentical codes and comments and only changed up on where I needed to.
+This significantly reduces the time having to start from the grounds up. -->
 
 	<head>
 		<title>Group G - Impacts</title> <!-- Title's name that is displayed on the tab. --!>
@@ -60,11 +64,11 @@
 		  <a class="page-link" href="causes.html" tabindex="-1">Previous</a> <!--Tabindex decides where the webpage should next navigate. --!>
 		  <!--This will go back to my causes webpage when clicked on. --!>
 		</li>
+		<li class="page-item"><a class="page-link" href="causes.html">4</a></li> <!--Goes a page backwards. --!>
 		<li class="page-item active"><a class="page-link">5</a></li> <!--Here we don't need a href as we are in the current page. Using active can highlight the page-item. --!>
 		<li class="page-item"><a class="page-link" href="../webpage_kris/solutions.html">6</a></li> <!--Simply moves a number to kris' solutions page. --!>
-		<li class="page-item"><a class="page-link" href="../webpage_kris/contact.html">7</a></li> <!--If the user clicks on 6 however, it can send them two pages forwards. --!>
 		<li class="page-item">
-		  <a class="page-link" href="../webpage_kris/solutions.html">Next</a> <!--Moves onto the kris' solutions webpage. --!>
+		  <a class="page-link" href="../webpage_kris/solutions.html" tabindex="+1">Next</a> <!--Moves onto the kris' solutions webpage. --!>
     </li>
   </ul>
 </nav>
@@ -73,8 +77,8 @@
 	<h1 class="text-primary" id ="Title_Heading">The Impacts</h1> <!--My heading -->
 		<h4 class="text-primary" id="Title_Subtitle">The tragic aftermath..</h4> <!--A much smaller heading, emphasising as a substitle.-->
 		<!-- I added individual divs here to make it stand out more than my causes.html. --!>
+		<!-- Notice how I am reusing code here, only difference is that I am altering the texts. --!>
 		<div class="container-fluid">
-		<!-- P serves as text which will be displayed. --!>
 		<p class ="text-info" id="paragraph-description-text">The lack of refreshing water notably leads to devastating effects such as individuals from families receiving detrimental diseases,
 		this is articulated by 800+ children dying on a regular basis.<p>
 		</div>
@@ -96,6 +100,7 @@
     <div class="collapse multi-collapse" id="Content" >  <!--Collapse multi-collapse will allow the navigation links below to be fully opened or closed. --!>
 	  <nav class="nav flex-column">  <!--Nav can also get the a classes links to stack on top of each others using flex-column. --!>
 			<!--I used data-bs for each individual a href links as I can show what they are supposed to represent. --!>
+			<!-- Another definition of reusing code illustrated here, saving me time. --!>
 			<a class="nav-link about text-decoration-underline" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
 			 data-bs-content="Take a look to see what Clean Water and Sanitation is about." data-bs-toggle="popover" data-bs-trigger="hover"
 			 data-bs-custom-class="custom-popover text-primary border-4 border-info">About</a>
@@ -105,10 +110,10 @@
 			<a class="nav-link facts text-decoration-underline" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
 				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation"
 				data-bs-custom-class="custom-popover text-primary border-4 border-info">Facts</a>
-		    <a class="nav-link disabled" aria-current="page" href="#">>Impact</a>  <!--Unlike the other links, this one can be disabled and therefore inaccessible because there's no link between the href's quotations. --!>
 			 <a class="nav-link causes text-decoration-underline" aria-current="page" href="causes.html" title="Causes (Created by Denzel)" 
 				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="What really contributed to all of this?"
 				data-bs-custom-class="custom-popover text-primary border-4 border-info">Causes</a>
+		  <a class="nav-link disabled" aria-current="page" href="#">>Impact</a> <!--Unlike the other links, this one can be disabled and therefore inaccessible because there's no link between the href's quotations. --!>
 		    <a class="nav-link solutions text-decoration-underline" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
 				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems."
 				data-bs-custom-class="custom-popover text-primary border-4 border-info">Solutions</a>
@@ -125,7 +130,7 @@
     </div>
   </div>
 </div>
-
+		<!-- Lastly for the HTML coding, we shouldn't forget who was behind the making of this.. --!>
 		<footer id="author_credit">
 		 <p>Author: Denzel Abraham</p>
 		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a></p> <!-- Footer is added to include the author's name which is of course me, Denzel Abraham. --!>
@@ -138,7 +143,7 @@
 		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 		return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen.
 })
-	//Script 2 - Making a changing text on "content_bar" using a function.
+		//Script 2 - Making a changing text on "content_bar" using a function.
 			//What this does is assigns the a tag content_bar id into a variable.
 			//Function is used to address the button onclick and content_text_change contains the whole coding process.
 			//It then checks if that variable text is the same as its a-tag counterpart. 
@@ -151,8 +156,9 @@
 		    contentbar.innerHTML = "Open Content";
   }
 }
-	</script>
-</body>
+		<!-- Closing tags which is required to making this whole HTML process work as already mentioned. --!>
+		</script>
+	</body>
 	
 </html>
-<!--All comments and known knowledge by me, NO AI used.--!> 
+<!--All comments, HTML/CSS/JS coding and known knowledge by me, NO AI used.--!>
