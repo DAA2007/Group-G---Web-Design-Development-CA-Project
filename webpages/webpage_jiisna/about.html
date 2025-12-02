@@ -5,7 +5,7 @@
 
 	<head>
 		<!--This will the name displayed on the tab when you open the page-->
-		<title>Gropu G - About</title>
+		<title>Group G - About</title>
 		<meta charset="utf-8"> <!--language html register to-->
 		<meta name="author" content="Jisna"> <!--author's name-->
 		<meta name="viewport" content="width=device-width, 
@@ -57,6 +57,19 @@
 			</ul>
 		  </div>
 		</nav>
+
+		<!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
+	    <nav aria-label="PagesOfContent-navi">
+			<!--Justify-content-end assigns whatever page-links to the right.--!>
+		  <ul class="pagination justify-content-end">	
+		    <li class="page-item active"><a class="page-link">1</a></li>
+		    <li class="page-item"><a class="page-link" href="../webpage_karim/gallery.html">2</a></li> <!-- Goes a page to Karim's gallery webpage. --!>
+		    <li class="page-item"><a class="page-link" href="facts.html">3</a></li> <!-- Skips two pages forwards to your facts.html --!>
+		    <li class="page-item">
+		    <a class="page-link" href="../webpage_karim/gallery.html">Next</a> <!--Continues a page forwards. --!>
+            </li>
+          </ul>
+        </nav>
 
 		<!--about section-->
 		<div class="container">
@@ -120,19 +133,6 @@
             return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
              })
         </script>
-
-		<!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
-	    <nav aria-label="PagesOfContent-navi">
-			<!--Justify-content-end assigns whatever page-links to the right.--!>
-		  <ul class="pagination justify-content-end">	
-		    <li class="page-item active"><a class="page-link">1</a></li>
-		    <li class="page-item"><a class="page-link" href="../webpage_karim/gallery.html">2</a></li> <!-- Goes a page to Karim's gallery webpage. --!>
-		    <li class="page-item"><a class="page-link" href="facts.html">3</a></li> <!-- Skips two pages forwards to your facts.html --!>
-		    <li class="page-item">
-		    <a class="page-link" href="../webpage_karim/gallery.html">Next</a> <!--Continues a page forwards. --!>
-            </li>
-          </ul>
-        </nav>
 
 		<!--Main heading-->
 		<h1 id ="Title_Name">About</h1> 

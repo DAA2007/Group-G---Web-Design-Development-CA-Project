@@ -1,20 +1,37 @@
+/* CSS is very useful as we use for styling, designing and colouring by linking id and classes. */
 
-#body_title{ /*Any content between the body tags will be affected.*/
+#topic_div{ /*Any content between the body tags will be affected.*/
 	background-color:hsl(186, 72%, 94%); /* Used this specific code from Jiisna */
 }
 
-#Title_Subheading{
+#Title_Subtitle{
 	text-decoration: underline 1px; /*Creates an underline under the paragraph text.*/
 }
 
-#Title_Heading, /*Moves both the title and title paragraph to the center*/
-#Title_Subheading{
+#Title_Heading, /*Moves both the title and substitle to the center*/
+#Title_Subtitle{
 	text-align: center;
 }
 
-#author_credit /*Essentially creates a text-box for the author with various styles to it*/
+#MainImageDisplay{
+}
+
+#SecondaryImageDisplay{
+}
+
+#paragraph-description-text /* Modifies the paragraphs, making them look more stylish. */
 {
-  border: 4px solid DeepSkyBlue;
+ font-family: "Open Sans", sans-serif;
+}
+
+#and-text /* Same thing applies for the "and...". */
+{
+ font-family: "Open Sans", sans-serif;
+}
+
+#authors_credit /*Essentially creates a text-box for the author with various styles to it*/
+{
+  border: 4px solid DeepSkyBlue; /* */
   border-style: dotted;
   background-color: AliceBlue;
   color: black;
@@ -41,8 +58,8 @@
  ,.content
 {
  position: relative;
-  bottom: 270px;
-  left: 6px;
+  bottom: 450px;
+  left: 4px;
 }
 
 .custom-popover{

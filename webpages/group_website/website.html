@@ -1,54 +1,64 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Very first line of code, tells which version of HTML the page is written in. --!>
 
-<html lang="en">
+<html lang="en"> <!-- Language that the HTML will register to. --!>
+<!--Any lines of html codes between any tags starting from the top will be prioritised first!-->
+<!--"X id="x"" or "X class="x" will always have their own meaning which also allows them to be editted individually in style.css !-->
+<!-- It is important to include a closing tag if we want our code to work. Example: </title>, </body>, </p>, </script> !-->
+<!-- Closing html is also essential to getting the whole coding working. !-->
+<!-- Spacing is very crucial since it makes our HTML look more readable and tidy. !-->
+<!-- Paragraph texts or any 1:1 elements can have reused codes since they follow the same fundamentals as having indentical purposes.--!>
+<!-- This is a webpage that we all has at least contributed to. --!>
 
 	<head>
-		<title>Website - Group G - Web Design Development CA Project</title>
+		<title>Group G - Website</title>
 		<meta charset="utf-8"> <!-- Language that the HTML will register to. --!>
 		<meta name="viewport" content="width=device-width, 
 		initial-scale=1.0" /> <!--Allows the webpage to be resized.-->
 		
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="css/style.css"> <!--Gets the html file to search for an avaliable CSS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--Grabs the fonts for the html.-->
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Loads Bootstrap ver. 5 for CSS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!--Loads Bootstrap ver. 5 for JS-->
-		<!-- Should we leave a HTML script src? <script src="script/script.js"></script> -->
 	</head>
-	
 	<body>
 	
-	<nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
+	<nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
+	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
+	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
 	 <div class="container-fluid">
-	  <ul class="navbar-nav">
+	  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered !-->
 	  <li class="nav-item logo">
+			<!--Href is a way to transfer the user into a website using a link. --!>
+			<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. --!>
+			<!--The title which is the text "NCI" will also display as a header in the UI popup display.--!>
 			<a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
-			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website.">
-			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a>
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website."
+			data-bs-custom-class="custom-popover text-primary border-4 border-info">
+			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.--!>
 		</li>
-		 <li class="navbar-brand" href="#">
-        <img src="images/logo.png" alt="Clean Water Logo" width="20" height="70" class="d-inline-block align-text-top border border-2 border-dark">
+		 <li class="navbar-brand" href="">
+        <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
 		</li>
 	  <ol class="breadcrumb">
-		<li class="breadcrumb-item active">Home</li>
+	  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. --!>
+		<li class="breadcrumb-item active" aria-current="page">Home</li>   <!--Adding active to the li class can help the users know that this is the current webpage. --!>
 	  </ol>
 	</ul>
   </div>
 </nav>
 	
-	<header>	
-	<h1> Sustainable Development Goal 6: Clean Water and Sanitation</h1>
-		<p> Welcome to our website. </p>
-	</header>
+	<h1 class="text-primary" id="Title_Heading">Sustainable Development Goal 6: Clean Water and Sanitation</h1> <!--My heading -->
+	<h4 class="text-primary" id="Title_Subtitle">Welcome to our website.</h4> <!--A much smaller heading, emphasising as a substitle.-->
 	
 	<footer id="authors_credit">
 		 <p>Authors: Denzel Abraham, Khrystyna Kokhanovska, Jisna Jose and Karim Jakub</p> <!-- Footer is added to include our student names. --!>
-		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a></p>
-		  <p><a href="x25544583@student.ncirl.ie">x25544583@student.ncirl.ie</a></p>
-		   <p><a href="x24229253@student.ncirl.ie">x24229253@student.ncirl.ie</a></p>
-		    <p><a href="x24766549@student.ncirl.ie">x24766549@student.ncirl.ie</a></p>
+		 <p><a href="x25385321@student.ncirl.ie">x25385321@student.ncirl.ie</a>,
+		  <a href="x25544583@student.ncirl.ie"> x25544583@student.ncirl.ie</a>,
+		   <a href="x24229253@student.ncirl.ie"> x24229253@student.ncirl.ie </a>and
+		    <a href="x24766549@student.ncirl.ie"> x24766549@student.ncirl.ie</a></p>
 	    </footer>	
 	
 		<!-- <a href="webpages/webpage_denzel/webpage_denzel.html"> Link_page_name. </a> !-->
