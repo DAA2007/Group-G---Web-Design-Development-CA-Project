@@ -8,6 +8,7 @@
 <!-- Spacing is very crucial since it makes our HTML look more readable and tidy. !-->
 <!-- Paragraph texts or any 1:1 elements can have reused codes since they follow the same fundamentals as having indentical purposes.--!>
 <!-- This is a webpage that we all has at least contributed to. --!>
+<!-- This webpage is going to be kept short, mainly because Jiisna's about goes explains our group topic and TIME.
 
 	<head>
 		<title>Group G - Website</title>
@@ -23,7 +24,7 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Loads Bootstrap ver. 5 for CSS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!--Loads Bootstrap ver. 5 for JS-->
 	</head>
-	<body>
+	<body id="bg">
 	
 	<nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
 	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
@@ -50,48 +51,12 @@
   </div>
 </nav>
 	
-	<h4><a class="btn content text-info border-4 border-info" id="content_bar" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" 
-  aria-controls="multiCollapseContent" style="background-color: #e3f2fd;"
-  <button onclick="content_text_change()">Open Content</button></a></h4> <!--Buttons can have functions that can be made through usages such as onclick, id, etc. --!>
-
-<div class="row">
-  <div class="col">
-    <div class="collapse multi-collapse" id="Content">  <!--Collapse multi-collapse will allow the navigation links below to be fully opened or closed. --!>
-	  <nav class="nav flex-column">  <!--Nav can also get the a classes links to stack on top of each others using flex-column. --!>
-			<!--I used data-bs for each individual a href links as I can show what they are supposed to represent. --!>
-			<!-- Another definition of reusing code illustrated here, saving me time. --!>
-			<a class="nav-link about text-decoration-underline" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
-			 data-bs-content="Take a look to see what Clean Water and Sanitation is about." data-bs-toggle="popover" data-bs-trigger="hover"
-			 data-bs-custom-class="custom-popover text-primary border-4 border-info">About</a>
-			<a class="nav-link quiz text-decoration-underline" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
-				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look at each and every photos."
-				data-bs-custom-class="custom-popover text-primary border-4 border-info">Gallery</a>
-			<a class="nav-link facts text-decoration-underline" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
-				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation"
-				data-bs-custom-class="custom-popover text-primary border-4 border-info">Facts</a>
-		  <a class="nav-link disabled" href="#">>Causes</a>   <!--Unlike the other links, this one can be disabled and therefore inaccessible because there's no link between the href's quotations. --!>
-			 <a class="nav-link impact text-decoration-underline" aria-current="page" href="impact.html" title="Impact (Created by Denzel)" 
-				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The devastating effects."
-				data-bs-custom-class="custom-popover text-primary border-4 border-info">Impact</a>
-		    <a class="nav-link solutions text-decoration-underline" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
-				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems."
-				data-bs-custom-class="custom-popover text-primary border-4 border-info">Solutions</a>
-			<a class="nav-link contact text-decoration-underline" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
-				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts."
-				data-bs-custom-class="custom-popover text-primary border-4 border-info">Contact</a>
-		    <a class="nav-link quiz text-decoration-underline" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
-				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself."
-				data-bs-custom-class="custom-popover text-primary border-4 border-info">Quiz</a>
-		    <a class="nav-link credits text-decoration-underline" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
-				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See all of the contributes made."
-				data-bs-custom-class="custom-popover text-primary border-4 border-info">Credits</a>
-		</nav>
-    </div>
-  </div>
-</div>
-	
 	<h1 class="text-primary" id="Title_Heading">Sustainable Development Goal 6: Clean Water and Sanitation</h1> <!--My heading -->
 	<h4 class="text-primary" id="Title_Subtitle">Welcome to our website.</h4> <!--A much smaller heading, emphasising as a substitle.-->
+	
+	<a class="btn text-info border-4 border-info" id="start" role="button"
+	href="../webpage_jiisna/about.html" title="Let's go" style="background-color: #e3f2fd;">Click here to get started!</a>
+	
 	
 	<footer id="authors_credit">
 		 <p>Authors: Denzel Abraham, Khrystyna Kokhanovska, Jisna Jose and Karim Jakub</p> <!-- Footer is added to include our student names. --!>

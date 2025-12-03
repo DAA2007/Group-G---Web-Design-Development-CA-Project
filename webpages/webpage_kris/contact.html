@@ -1,21 +1,22 @@
-<DOCTYPE.html>
-  <html lang="en"> 
+    <!--Contact page created by Khrystyna Kokhanovska -->
+<!DOCTYPE html>
+
+ <html lang="en"> 
   <head> 
-  <title> Contact Us </title>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="device-width, initial-scale=1"/>
-  <meta name="author" content="Khrystyna Kokhanovska">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel=stylesheet>
+		<title>Group G - Contact</title> <!-- Title's name that is displayed on the tab. --!>
+		<meta charset="utf-8"> <!-- Character sets the HTML uses. --!>
+		<meta name="viewport" content="width=device-width, 
+		initial-scale=1.0" /> <!--Allows the webpage to be resized.-->
+		<meta name="author" content="Khrystyna Kokhanovska">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
-<link rel="stylesheet" href="style.css"> <!--connection to google fonts-->
-
-  <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css"> <!--Gets the html file to search for an avaliable CSS-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--Grabs the fonts for the html.-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Loads Bootstrap ver. 5 for CSS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!--Loads Bootstrap ver. 5 for JS-->
  
-    <!--Solutions page created by Khrystyna Kokhanovska -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"> </script>
   <style>
     .ph-lg { background:#e6e6e6; border:1px solid #ccc; height:220px; }
     .ph-sm { background:#e6e6e6; border:1px solid #ccc; height:70px; }
@@ -24,7 +25,8 @@
   </head>
 
   <body> 
-  <nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
+ 
+   <nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
 	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
 	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
 	 <div class="container-fluid">
@@ -51,8 +53,25 @@
 	</ul>
   </div>
 </nav>
+
+	<nav aria-label="PagesOfContent-navi"> <!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
+  <ul class="pagination justify-content-end"> <!--Ul formats the page-items lists--!>
+  <!--Justify-content-end assigns the whatever page-links to the right.--!>
+		<li class="page-item">
+		  <a class="page-link" href="solutions.html" tabindex="-1">Previous</a> <!--Tabindex decides where the webpage should next navigate. --!>
+		  <!--This will go back to Karim's quiz webpage when clicked on. --!>
+		</li>
+		<!--There's a difference here, the number highlighted is now the at the last page link. This is because this is the final webpage in our content order. --!>
+		<li class="page-item"><a class="page-link" href="solutions.html">6</a></li> <!--Skips two pages back to Kris' contact.html. --!>
+		<li class="page-item active"><a class="page-link">7</a></li> <!--Simply moves back a number to karim's quiz page. --!>
+		<li class="page-item"><a class="page-link" href="../webpage_karim/quiz.html">8</a></li> <!--Here we don't need a href as we are in the current page. Using active can highlight the page-item. --!>
+		<li class="page-item">
+		  <a class="page-link" href="../webpage_karim/quiz.html">Next</a> <!--Instead of next, I thought if I can add a reread, basically this sends the user back to square 1 if they want to read the presentation all over again. --!>
+    </li>
+  </ul>
+</nav>
 <!-- this is navigation section-->
-    <h1> Solutions <h1> 
+    <h1>Contacts<h1> 
   <main class= "container py-4 main"> 
 
 <!-- Here is the main content section-->

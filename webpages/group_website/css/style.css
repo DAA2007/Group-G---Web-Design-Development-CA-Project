@@ -1,7 +1,8 @@
 /* CSS is very useful as we use for styling, designing and colouring by linking id and classes. */
 
-#topic_div{ /*Any content between the body tags will be affected.*/
+#bg{ /*Any content between the body tags will be affected.*/
 	background-color:hsl(186, 72%, 94%); /* Used this specific code from Jiisna */
+	background-image: url(images/"pexels-blaque-x-ocean_bg.jpg")
 }
 
 #Title_Subtitle{
@@ -20,11 +21,6 @@
 }
 
 #paragraph-description-text /* Modifies the paragraphs, making them look more stylish. */
-{
- font-family: "Open Sans", sans-serif;
-}
-
-#and-text /* Same thing applies for the "and...". */
 {
  font-family: "Open Sans", sans-serif;
 }
@@ -57,6 +53,7 @@
 {
  position: relative;
 }
+
 
 .custom-popover{
    background-color: #111111;
