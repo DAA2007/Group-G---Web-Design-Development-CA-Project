@@ -50,6 +50,46 @@
   </div>
 </nav>
 	
+	<h4><a class="btn content text-info border-4 border-info" id="content_bar" data-bs-toggle="collapse" href="#Content" role="button" aria-expanded="false" 
+  aria-controls="multiCollapseContent" style="background-color: #e3f2fd;"
+  <button onclick="content_text_change()">Open Content</button></a></h4> <!--Buttons can have functions that can be made through usages such as onclick, id, etc. --!>
+
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="Content">  <!--Collapse multi-collapse will allow the navigation links below to be fully opened or closed. --!>
+	  <nav class="nav flex-column">  <!--Nav can also get the a classes links to stack on top of each others using flex-column. --!>
+			<!--I used data-bs for each individual a href links as I can show what they are supposed to represent. --!>
+			<!-- Another definition of reusing code illustrated here, saving me time. --!>
+			<a class="nav-link about text-decoration-underline" href="../webpage_jiisna/about.html" title="About (Created by Jiisna.)" 
+			 data-bs-content="Take a look to see what Clean Water and Sanitation is about." data-bs-toggle="popover" data-bs-trigger="hover"
+			 data-bs-custom-class="custom-popover text-primary border-4 border-info">About</a>
+			<a class="nav-link quiz text-decoration-underline" href="../webpage_karim/gallery.html" title="Gallery (Created by Karim)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Take a look at each and every photos."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Gallery</a>
+			<a class="nav-link facts text-decoration-underline" href="../webpage_jiisna/facts.html" title="Facts (Created by Jiisna)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The facts and useful guides to Cleaning Water and Sanitation"
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Facts</a>
+		  <a class="nav-link disabled" href="#">>Causes</a>   <!--Unlike the other links, this one can be disabled and therefore inaccessible because there's no link between the href's quotations. --!>
+			 <a class="nav-link impact text-decoration-underline" aria-current="page" href="impact.html" title="Impact (Created by Denzel)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="The devastating effects."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Impact</a>
+		    <a class="nav-link solutions text-decoration-underline" href="../webpage_kris/solutions.html" title="Solution (Created by Kris)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Read workarounds to cleaning water and ways to solve problems."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Solutions</a>
+			<a class="nav-link contact text-decoration-underline" href="../webpage_kris/contact.html" title="Contact (Created by Kris)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="View informations and contacts."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Contact</a>
+		    <a class="nav-link quiz text-decoration-underline" href="../webpage_karim/quiz.html" title="Quiz (Created by Karim)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Skip to the Quiz and test yourself."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Quiz</a>
+		    <a class="nav-link credits text-decoration-underline" href="../webpage_denzel/credits.html" title="Credits (Created by Denzel)" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="See all of the contributes made."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Credits</a>
+		</nav>
+    </div>
+  </div>
+</div>
+	
 	<h1 class="text-primary" id="Title_Heading">Sustainable Development Goal 6: Clean Water and Sanitation</h1> <!--My heading -->
 	<h4 class="text-primary" id="Title_Subtitle">Welcome to our website.</h4> <!--A much smaller heading, emphasising as a substitle.-->
 	
@@ -61,25 +101,31 @@
 		    <a href="x24766549@student.ncirl.ie"> x24766549@student.ncirl.ie</a></p>
 	    </footer>	
 	
-		<!-- <a href="webpages/webpage_denzel/webpage_denzel.html"> Link_page_name. </a> !-->
-		<!-- <a href="webpages/webpage_denzel/webpage_denzel2.html"> Link_page_name. </a> !-->
-		<!-- <a href="webpages/webpage_kris/webpage_kris.html"> Link_page_name. </a> !-->
-		<!-- <a href="webpages/webpage_jiisna/webpage_jiisna.html"> Link_page_name. </a> !-->
-		<!-- <a href="webpages/webpage_jiisna/webpage_jiisna2.html"> Link_page_name. </a> !-->
-		<!-- <a href="webpages/webpage_kris/webpage_kris.html"> Link_page_name. </a> !-->
-		<!-- <a href="webpages/webpage_kris/webpage_kris2.html"> Link_page_name. </a> !-->
-		<!-- <a href="webpages/webpage_karim/webpage_karim.html"> Link_page_name. </a> !-->
-		<!-- <a href="webpages/webpage_karim/webpage_karim2.html"> Link_page_name. </a> !-->
-		<script>	
+		<script> //The Scripts, what allows javascript
+		//Script 1 - Making a display popup trigger on every nav-link.
 		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) 
 		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-		return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen 
+		return new bootstrap.Popover(popoverTriggerEl) // This makes gets the bootstrap to display the "popover" information on screen.
 })
-		</script>		
+		//Script 2 - Making a changing text on "content_bar" using a function.
+			//What this does is assigns the a tag content_bar id into a variable.
+			//Function is used to address the button onclick and content_text_change contains the whole coding process.
+			//It then checks if that variable text is the same as its a-tag counterpart. 
+			//If it is, the innerhtml will register as "Close Content", else vice versa, it will be "Open Content".
+		function content_text_change() {
+	    var contentbar = document.getElementById("content_bar");
+	        if (contentbar.innerHTML === "Open Content") {
+		    contentbar.innerHTML = "Close Content";
+	  } else {
+		    contentbar.innerHTML = "Open Content";
+  }
+}
+		<!-- Closing tags which is required to making this whole HTML process work as already mentioned. --!>
+		</script>
 	</body>
-	
-
+			
 </html>
+<!--All comments, HTML/CSS/JS coding and known knowledge by me, NO AI used.--!>
 
 
 
