@@ -37,28 +37,54 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <a class="navbar-brand" href="#">Clean Water</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quiz.html">Quiz</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-sm border border-4 border-info" style="background-color: #e3f2fd;"> <!-- We can allow tags to be altered through using classes by simply adding styles like adding borders, colors, etc! 
+	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
+	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
+	 <div class="container-fluid">
+	  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered !-->
+	  <li class="nav-item logo">
+			<!--Href is a way to transfer the user into a website using a link. --!>
+			<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. --!>
+			<!--The title which is the text "NCI" will also display as a header in the UI popup display.--!>
+			<a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
+			data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website."
+			data-bs-custom-class="custom-popover text-primary border-4 border-info">
+			<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.--!>
+		</li>
+		 <li class="navbar-brand" href="">
+        <img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
+		</li>
+	  <ol class="breadcrumb">
+	  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. --!>
+		<li class="breadcrumb-item"><a href="../group_website/website.html" title="Home" 
+				data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage."
+				data-bs-custom-class="custom-popover text-primary border-4 border-info">Home</a></li> <!--Similar process to the NCI link except we don't need to assign an image with a link. --!>
+		<li class="breadcrumb-item active" aria-current="page">Gallery</li>   <!--Adding active to the li class can help the users know that this is the current webpage. --!>
+	  </ol>
+	</ul>
+  </div>
+</nav>
+
+	<nav aria-label="PagesOfContent-navi"> <!--Another navbar that includes a-links that can either transfer you back to the previous page, the next page or can let you select a different page to go to.-->
+  <ul class="pagination justify-content-end"> <!--Ul formats the page-items lists--!>
+  <!--Justify-content-end assigns the whatever page-links to the right.--!>
+		<li class="page-item">
+		  <a class="page-link" href="../webpage_jiisna/about.html" tabindex="-1">Previous</a> <!--Tabindex decides where the webpage should next navigate. --!>
+		  <!--This will go back to Karim's quiz webpage when clicked on. --!>
+		</li>
+		<!--There's a difference here, the number highlighted is now the at the last page link. This is because this is the final webpage in our content order. --!>
+		<li class="page-item"><a class="page-link" href="../webpage_jiisna/about.html">1</a></li> <!--Skips two pages back to Kris' contact.html. --!>
+		<li class="page-item active"><a class="page-link">2</a></li> <!--Simply moves back a number to karim's quiz page. --!>
+		<li class="page-item"><a class="page-link" href="../webpage_jiisna/facts.html">3</a></li> <!--Here we don't need a href as we are in the current page. Using active can highlight the page-item. --!>
+		<li class="page-item">
+		  <a class="page-link" href="../webpage_jiisna/facts.html">Next</a> <!--Instead of next, I thought if I can add a reread, basically this sends the user back to square 1 if they want to read the presentation all over again. --!>
+    </li>
+  </ul>
 </nav>
 
 <section class="container">
     <div class="gallery-title">
-        <h1>Clean Water Gallery</h1>
+        <h1 class="text-primary">Clean Water Gallery</h1>
         <p>A collection of images celebrating access to safe and clean water.</p>
     </div>
 
@@ -66,7 +92,7 @@
        
         <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow-sm border-0">
-                <img src="cleanwater1.jpg" class="card-img-top gallery-img" alt="Clean river">
+                <img src="images/cleanwater1.jpg" class="card-img-top gallery-img" alt="Clean river">
                 <div class="card-body">
                     <h5 class="card-title">Refreshing Hydration</h5>
                     <p class="card-text small text-muted">
@@ -79,7 +105,7 @@
      
         <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow-sm border-0">
-                <img src="cleanwater2.jpg" class="card-img-top gallery-img" alt="Children with clean water">
+                <img src="images/cleanwater2.jpg" class="card-img-top gallery-img" alt="Children with clean water">
                 <div class="card-body">
                     <h5 class="card-title">Natural Water Source</h5>
                     <p class="card-text small text-muted">
@@ -92,7 +118,7 @@
       
         <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow-sm border-0">
-                <img src="cleanwater3.jpg" class="card-img-top gallery-img" alt="Tap water">
+                <img src="images/cleanwater3.jpg" class="card-img-top gallery-img" alt="Tap water">
                 <div class="card-body">
                     <h5 class="card-title">Access to Clean Tap Water</h5>
                     <p class="card-text small text-muted">
@@ -105,7 +131,7 @@
     
         <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow-sm border-0">
-                <img src="cleanwater4.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
+                <img src="images/cleanwater4.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
                 <div class="card-body">
                     <h5 class="card-title">Protecting Aquatic Life</h5>
                     <p class="card-text small text-muted">
@@ -118,7 +144,7 @@
 
 <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow-sm border-0">
-                <img src="cleanwater5.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
+                <img src="images/cleanwater5.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
                 <div class="card-body">
                     <h5 class="card-title">Water Purity</h5>
                     <p class="card-text small text-muted">
@@ -130,7 +156,7 @@
 		
 		<div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow-sm border-0">
-                <img src="cleanwater6.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
+                <img src="images/cleanwater6.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
                 <div class="card-body">
                     <h5 class="card-title">Safe Drinking Supply</h5>
                     <p class="card-text small text-muted">
@@ -141,7 +167,7 @@
         </div>
 		<div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow-sm border-0">
-                <img src="cleanwater7.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
+                <img src="images/cleanwater7.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
                 <div class="card-body">
                     <h5 class="card-title">Community Water Access</h5>
                     <p class="card-text small text-muted">
@@ -152,7 +178,7 @@
         </div>
 		<div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow-sm border-0">
-                <img src="cleanwater8.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
+                <img src="images/cleanwater8.jpg" class="card-img-top gallery-img" alt="Water treatment plant">
                 <div class="card-body">
                     <h5 class="card-title">Clean Water for All</h5>
                     <p class="card-text small text-muted">
