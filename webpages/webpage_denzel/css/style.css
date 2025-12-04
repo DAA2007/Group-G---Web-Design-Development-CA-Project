@@ -2,6 +2,18 @@
 
 #topic_div{ /*Any content between the body tags will be affected.*/
 	background-color:hsl(186, 72%, 94%); /* Used this specific code from Jiisna */
+	border: 4px solid cyan;
+}
+
+#backgroundidforstyling{
+	background-color:hsl(188, 100%, 95%); /* Used this specific code from Jiisna */
+}
+
+#Title_body{
+	border: 4px solid DeepSkyBlue;
+	border-style: double;
+	margin-bottom: 60px;
+	width: 50%;
 }
 
 #Title_Subtitle{
@@ -14,9 +26,15 @@
 }
 
 #MainImageDisplay{
+	display: block;
+	margin: auto;
+	border: 4px solid grey;
 }
 
 #SecondaryImageDisplay{
+	display: block;
+	margin: auto;
+	border: 4px solid grey;
 }
 
 #paragraph-description-text /* Modifies the paragraphs, making them look more stylish. */
@@ -47,7 +65,7 @@
   position: absolute;
   width: 120px;
   top: 210px;
-  left: 8px;
+  left: 126px;
   border: 4px solid DeepSkyBlue;
   border-style: double;
   background-color: AliceBlue;
@@ -65,6 +83,27 @@
 	text-align: center;
 }
 
+#LeftandRightImagesDisplay
+{
+	width:100%;
+    overflow:auto;
+}
+
+#divassigner 
+{
+  width:50%;
+  float:left;
+}
+
+#LeftImageDisplay{
+	display: block;
+	border: 4px solid grey;
+}
+
+#RightImageDisplay{
+	display: block;
+	border: 4px solid grey;
+}
 
 
 .custom-popover{
