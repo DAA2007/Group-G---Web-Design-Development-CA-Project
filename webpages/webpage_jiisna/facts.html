@@ -34,25 +34,25 @@
 	Not to mention, style can do a similar method by having the ablity to change the background-color, text size, text, add a font, (etc...) -->
 	<!--Navbar which not only creates a section but can include lists of mini text-links that would allow the user to navigate onto different webpages.-->
 		   <div class="container-fluid">
-			  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered !-->
+			  <ul class="navbar-nav"> <!--Assigns the ul as a nav, what this does is allows the li(s) to be ordered -->
 			     <li class="nav-item logo">
-					<!--Href is a way to transfer the user into a website using a link. --!>
-					<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. --!>
-					<!--The title which is the text "NCI" will also display as a header in the UI popup display.--!>
+					<!--Href is a way to transfer the user into a website using a link. -->
+					<!--Data-bs toggle allows a UI popup display, data-bs-trigger simply decide on how to make the event occur while data-bs-content provides informations. -->
+					<!--The title which is the text "NCI" will also display as a header in the UI popup display.-->
 					<a class="nav-link logo" href="https://www.ncirl.ie/Students/Current-Students-Hub" title="NCI" 
 					data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Head back to the NCI website."
 					data-bs-custom-class="custom-popover text-primary border-4 border-info">
-					<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.--!>
+					<img src="https://www.ncirl.ie/Portals/0/NCI_Logo_Colour-01.png" alt="NCI link" width="100px"></a> <!--Makes the NCI logo a link icon that can send you to the National College of Ireland website.-->
 				</li>
 				 <li class="navbar-brand" href="">
 				<img src="images/logo.png" alt="Clean Water Logo" width="80" height="70" class="d-inline-block align-text-top border border-2 border-dark">
 				</li>
 			  <ol class="breadcrumb">
-			  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. --!>
+			  <!--Assigns ol class to breadcrumb, breadcrumb adds linear lists which slashes items between to guide and show the users where they are. -->
 				<li class="breadcrumb-item"><a href="../group_website/website.html" title="Home" 
 						data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Return back to the Homepage."
-						data-bs-custom-class="custom-popover text-primary border-4 border-info">Home</a></li> <!--Similar process to the NCI link except we don't need to assign an image with a link. --!>
-				<li class="breadcrumb-item active" aria-current="page">Facts</li>   <!--Adding active to the li class can help the users know that this is the current webpage. --!>
+						data-bs-custom-class="custom-popover text-primary border-4 border-info">Home</a></li> <!--Similar process to the NCI link except we don't need to assign an image with a link. -->
+				<li class="breadcrumb-item active" aria-current="page">Facts</li>   <!--Adding active to the li class can help the users know that this is the current webpage. -->
 			  </ol>
 			</ul>
 		  </div>
@@ -70,13 +70,13 @@
 			<!--Assigns the whatever page-links to the right.-->
 		  <ul class="pagination justify-content-end">	
 	        <li class="page-item">
-		        <a class="page-link" href="../webpage_karim/gallery.html" tabindex="-1">Previous</a> <!--Goes a page back. --!>
+		        <a class="page-link" href="../webpage_karim/gallery.html" tabindex="-1">Previous</a> <!--Goes a page back. -->
 		    </li>
-		    <li class="page-item"><a class="page-link" href="../webpage_karim/gallery.html">2</a></li> <!--Back a page back, like the previous button. --!>
+		    <li class="page-item"><a class="page-link" href="../webpage_karim/gallery.html">2</a></li> <!--Back a page back, like the previous button. -->
 		    <li class="page-item active"><a class="page-link">3</a></li>  <!--Selected page, which is this page. --!>
-		    <li class="page-item"><a class="page-link" href="../webpage_denzel/causes.html">4</a></li> <!--Onto a page forwards. --!>
+		    <li class="page-item"><a class="page-link" href="../webpage_denzel/causes.html">4</a></li> <!--Onto a page forwards. -->
 		    <li class="page-item">
-		    <a class="page-link" href="../webpage_denzel/causes.html">Next</a> <!--Continues a page forwards. --!>
+		    <a class="page-link" href="../webpage_denzel/causes.html">Next</a> <!--Continues a page forwards. -->
             </li>
           </ul>
         </nav>
@@ -84,14 +84,89 @@
 		<!--Main heading-->
 		<h1 id ="Title_Name">Facts</h1> 
 		<!--this text will be displyed -->
+		<div class="intro">
              <p id ="Title_Paragraph">Sustainale Development Goals 6</p>
 
+		 <p>
+			Access to clean water and safe sanitation is one of the most basic human needs for health and well‑being. 
+			 Sustainable Development Goal 6 (SDG 6), adopted by the United Nations in 2015, aims to ensure the availability and sustainable management of water and sanitation for all by 2030. 
+			 Around the world, billions of people still lack safely managed drinking water and sanitation services, which poses serious risks to health, deepens poverty, and threatens ecosystems.
+			<br> Water is vital not only for drinking and hygiene but also for agriculture, industry, and sustaining the environment. Achieving SDG 6 requires investments in infrastructure, education 
+			 in hygiene practices, and protection of water‑related ecosystems so that everyone can enjoy safe, affordable, and reliable access to this essential resource.
+         </p>
+
+		<h3>Global statics</h3>
+		
+		    <p>Approximately one in four people worldwide, or 2.2 billion people, lack access to safely managed drinking water, with the majority living in rural areas, least developed countries, and fragile contexts.
+				This equates to about 26% of the global population.</p>
+
+		<!--card list for each topic using bootstrp-->
+
+		<h5>Sanitation Breakdown</h5>
+		
+	        
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                     <img src="images/jisna_fact1.jpg" class="card-img-top" alt="Facts">
+                        <div class="card-body">
+                           <h5 class="card-title">Sanitation Access</h5>
+              <p class="card-text">3.4 billion people worldwide lack access to safely managed sanitation services.</p>
+                        </div>
+                  </div>
+                </div>
+				
+                <div class="col">
+                    <div class="card">
+                       <img src="images/jisna_fact2.jpg" class="card-img-top" alt="Facts">
+                          <div class="card-body">
+                             <h5 class="card-title">Open Defecation</h5>
+               <p class="card-text">A sub-group of those without safely managed services, 354 million people, still practice open defecation.</p>
+                          </div>
+                    </div>
+               </div>
+			   
+               <div class="col">
+                  <div class="card">
+                    <img src="images/jisna_fact3.jpg" class="card-img-top" alt="Facts">
+                       <div class="card-body">
+                         <h5 class="card-title">Basic Hygiene</h5>
+               <p class="card-text">1.7 billion people lack basic hygiene services at home, including 611 million people with no facilities at all.</p>
+                       </div>
+                  </div>
+                </div>
+           </div> 
+
+		         <div class="content">
+		<h5>Local Context</h5>
+                         <ul> 
+		                   <li>Communities often rely on groundwater and local water supplies, which can be affected by contamination from agriculture, septic tanks, or industrial activity.</li>
+			               <li> Seasonal shortages are common in many areas, especially during summer or drought periods.</li>
+			               <li>Local authorities and governments monitor water quality and issue notices (like boil water advisories) when contamination is detected.</li>
+			               <li>Wastewater treatment facilities are essential to protect rivers and lakes, but smaller towns and rural areas sometimes face challenges in maintaining them.</li>
+			               <li>- Awareness campaigns and community projects (like rainwater harvesting or hygiene education) play a key role in improving sanitation and water access.</li>
+		                 </ul>
+                    </div>
+             </div>
+
 		<!--footer is where we add the authors name links and so on.-->
-       <footer id="author_credit">
-		<p>Author: Jisna Jose</p>
-		<p><a href="x24229253@student.ncirl.ie">x24229253@student.ncirl.ie</a></p>
+
+		<div class="cardtext-center">
+            <div class="card-header">
+                 SDG 6 Awareness Project
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Web Design & Development</h5>
+                    <p class="card-text">Created by Jisna Jose <br> Student ID:24229253 .</p>
+                    <a href="about.html" class="btn btn-primary">About</a>
+            </div>
+            
+        </div>
+	</div>	
+		
 	</body>
 	
 
 </html>
+
 
